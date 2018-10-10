@@ -1,0 +1,50 @@
+<% provide(:title, "View Provider") %>
+<p id="notice"><%= notice %></p>
+
+
+<h1>Service Provider:</h1>
+<h2>Click on the name of the service provider to access it.</h2>
+<hr/>
+<p>
+  <strong>Name:</strong>
+
+  <%= link_to @service_provider.name , @service_provider.link%>
+
+</p>
+<hr/>
+<p>
+  <strong>Address:</strong>
+  <%= @service_provider.address %>
+</p>
+<hr/>
+<p>
+  <strong>Telephone:</strong>
+  <%= @service_provider.telephone %>
+</p>
+<hr/>
+<p>
+  <strong>Email:</strong>
+  <%= @service_provider.email %>
+</p>
+<hr/>
+<p>
+  <strong>Acc number:</strong>
+  <%= @service_provider.acc_number %>
+</p>
+<hr/>
+<p>
+  <strong>Active:</strong>
+  <%= @service_provider.active %>
+</p>
+<hr/>
+<p>
+  <strong>User:</strong>
+  <%= @service_provider.user_id %>
+</p>
+
+<hr/>
+<hr/>
+<% if current_user.admin == true %>
+<%= link_to 'Edit', edit_service_provider_path(@service_provider) %> |
+<% end %>
+<%= link_to 'Back', service_providers_path %>

@@ -1,0 +1,61 @@
+<% provide(:title, "Service Providers") %>
+
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
+
+<%= form_with(model: service_provider, local: true) do |form| %>
+  <% if service_provider.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(service_provider.errors.count, "error") %> prohibited this service_provider from being saved:</h2>
+
+      <ul>
+      <% service_provider.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+
+    <%= form.label :name %>
+    <%= form.text_field :name, class: 'form-control' %>
+
+
+    <%= form.label :address %>
+    <%= form.text_area :address, class: 'form-control' %>
+
+
+    <%= form.label :telephone %>
+    <%= form.text_field :telephone, class: 'form-control' %>
+
+
+
+    <%= form.label :email %>
+    <%= form.text_field :email, class: 'form-control' %>
+
+
+    <%= form.label :acc_number %>
+    <%= form.text_field :acc_number , class: 'form-control'%>
+
+
+    <%= form.label :active %>
+    <%= form.check_box :active %>
+
+
+
+    <%= form.label :link %>
+    <%= form.text_area :link, class: 'form-control'%>
+
+
+
+
+    <%= form.hidden_field :user_id ,value: current_user.id, :disabled => false, class: 'form-control'%>
+
+<br>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
+  </div>
+</div>

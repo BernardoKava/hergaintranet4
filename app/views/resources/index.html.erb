@@ -1,0 +1,40 @@
+<% provide(:title, " Resources") %>
+<p id="notice"><%= notice %></p>
+
+<h1>Resources</h1>
+
+
+<table class="table table-fixed">
+  <thead>
+    <tr>
+      <th class="col-xs-1">Name</th>
+      <th class="col-xs-10">Description</th>
+      <th class="col-xs-1">User email</th>
+      <th class="col-xs-1"></th>
+      <th class="col-xs-1"></th>
+      <th class="col-xs-1"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @resources.each do |resource| %>
+      <tr>
+        <td class="col-xs-1"><%= resource.name %></td>
+        <td class="col-xs-10"><%= resource.description %></td>
+        <td class="col-xs-1"><%= resource.user.email %></td>
+        <td class="col-xs-1"><%= link_to 'View', resource %></td>
+
+        <% if current_user.admin == true %>
+        <td><%= link_to 'Edit', edit_resource_path(resource) %></td>
+        <td><%= link_to 'Destroy', resource, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <% end %>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<hr>
+<%= will_paginate @resources %>
+<hr>
+
+<%= link_to 'New Resource', new_resource_path ,class:"btn btn-primary" %>

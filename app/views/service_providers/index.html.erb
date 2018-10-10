@@ -1,0 +1,50 @@
+<% provide(:title, "Service Providers") %>
+<p id="notice"><%= notice %></p>
+
+<h1>Service Providers</h1>
+
+
+<table class="table table-fixed">
+  <thead>
+    <tr>
+      <th class="col-xs-1">Name</th>
+      <th class="col-xs-5">Address</th>
+      <th class="col-xs-1">Telephone</th>
+      <th class="col-xs-1">Email</th>
+      <th class="col-xs-1">Acc number</th>
+      <th class="col-xs-1">Active</th>
+      <th class="col-xs-1">User Email</th>
+      <th class="col-xs-1"></th>
+      <th class="col-xs-1"></th>
+      <th class="col-xs-1"></th>
+
+    </tr>
+  </thead>
+  <tbody>
+    <% @service_providers.each do |service_provider| %>
+      <tr>
+        <td class="col-xs-1"><%= service_provider.name %></td>
+        <td class="col-xs-5"><%= service_provider.address %></td>
+        <td class="col-xs-1"><%= service_provider.telephone %></td>
+        <td class="col-xs-1"><%= service_provider.email %></td>
+        <td  class="col-xs-1"><%= service_provider.acc_number %></td>
+        <td  class="col-xs-1"><%= service_provider.active %></td>
+        <td  class="col-xs-1"><%= service_provider.user.email %></td>
+        <td  class="col-xs-1"><%= link_to 'View', service_provider %></td>
+
+        <% if current_user.admin == true %>
+          <td><%= link_to 'Edit', edit_service_provider_path(service_provider) %></td>
+          <td><%= link_to 'Destroy', service_provider, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+
+        <% end %>
+
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+<hr>
+<%= will_paginate @service_providers %>
+<hr>
+<%= link_to 'New Service Provider', new_service_provider_path, class:"btn btn-primary" %>

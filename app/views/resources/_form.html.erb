@@ -1,0 +1,44 @@
+<% provide(:title, "Resources") %>
+
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
+
+<%= form_with(model: resource, local: true) do |form| %>
+  <% if resource.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(resource.errors.count, "error") %> prohibited this resource from being saved:</h2>
+
+      <ul>
+      <% resource.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+
+    <%= form.label :name %>
+    <%= form.text_field :name , class: 'form-control'%>
+
+
+
+    <%= form.label :description %>
+    <%= form.text_area :description , class: 'form-control'%>
+
+
+
+    <%= form.hidden_field :user_id ,value: current_user.id %>
+
+
+
+    <%= form.label :link %>
+    <%= form.text_area :link, class: 'form-control' %>
+
+
+      <br/>
+
+    <p><%= form.submit %></p>
+
+<% end %>
+  </div>
+</div>

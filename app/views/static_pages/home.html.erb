@@ -1,0 +1,24 @@
+<% provide(:title, 'Home') %>
+
+<div class="center jumbotron">
+
+  <%= image_tag("hanielbigmouth.PNG", alt: "haniel big mouth", :size => "260x180") %>
+  <%= image_tag("hanielcarryirel.PNG", alt: "haniel carry irel", :size => "260x180") %>
+  <%= image_tag("IMG_0728.JPG", alt: "IMG_0728", :size => "260x180") %>
+  <%= image_tag("hanielfeedingirel.png", alt: "haniel feeding irel", :size => "260x180") %>
+  <%= image_tag("irelbigmouth.PNG", alt: "irel big mouth", :size => "260x180") %>
+  <%= image_tag("IMG_0745.PNG", alt: "IMG_0745", :size => "260x180") %>
+
+
+</div>
+<div class="center jumbotron">
+  <h2>Welcome to the house intranet page.</h2>
+
+  <h2>
+feel free to register with an
+    email address and password.  it is all internal therefore no email verifications will be sent.
+  </h2>
+
+  <%= link_to "Register!", new_user_registration_path, class: "btn btn-lg btn-primary" %>
+</div>
+
