@@ -1,19 +1,35 @@
 <p id="notice"><%= notice %></p>
-
+<hr>
 <p>
   <strong>Name:</strong>
   <%= @meeting.name %>
 </p>
-
+<hr>
 <p>
   <strong>Start time:</strong>
   <%= @meeting.start_time %>
 </p>
-
+<hr>
 <p>
   <strong>End time:</strong>
   <%= @meeting.end_time %>
 </p>
-
+<hr>
+<p>
+  <strong>Description:</strong>
+  <textarea rows="4" cols="150" readonly>
+  <%= @meeting.description %>
+  </textarea>
+</p>
+<hr>
+<p>
+  <strong>Comments:</strong>
+  <textarea rows="4" cols="150" readonly>
+  <%= @meeting.comments %>
+  </textarea>
+</p>
+<hr>
+<% if @meeting.user.email == current_user.email %>
 <%= link_to 'Edit', edit_meeting_path(@meeting) %> |
+<% end %>
 <%= link_to 'Back', meetings_path %>

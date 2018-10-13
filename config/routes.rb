@@ -1,9 +1,12 @@
 Rails.application.routes.draw do
+  devise_for :users
+  mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
+  resources :diaries
   resources :meetings
   resources :resources
   resources :service_providers
   get 'user/index'
-  devise_for :users
+
   get 'dashboard/index'
   root 'static_pages#home'
   get 'rules',      to: 'static_pages#rules'

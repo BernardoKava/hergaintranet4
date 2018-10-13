@@ -10,16 +10,17 @@
 </head>
 <body>
 <%= render 'layouts/header' %>
+
 <div class="container">
+  <hr>
   <% if current_user %>
     <%= render 'user/gravatar'%>
   <% else %>
     <%= render 'user/visitorNotice'%>
   <% end %>
-  <p class="notice"><%= notice %></p>
-  <p class="alert"><%= alert %></p>
 
   <%= yield %>
+
   <%= render 'layouts/footer' %>
 </div>
 </body>

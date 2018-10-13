@@ -18,7 +18,11 @@ gem 'jbuilder',                '2.7.0'
 gem 'bootsnap'
 gem 'devise'
 gem 'gravtastic'
-gem 'simple_calendar',         '2.0'
+gem 'simple_calendar'
+gem 'recurring_select', github: "RundownApp/recurring_select"
+gem 'rails_admin'
+
+
 
 
 group :development, :test do

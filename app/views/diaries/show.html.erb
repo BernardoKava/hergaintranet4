@@ -1,0 +1,45 @@
+<p id="notice"><%= notice %></p>
+
+<hr>
+<p>
+  <strong>Name:</strong>
+  <%= @diary.name %>
+</p>
+<hr>
+<p>
+  <strong>Start time:</strong>
+  <%= @diary.start_time %>
+</p>
+<hr>
+<p>
+  <strong>End time:</strong>
+  <%= @diary.end_time %>
+</p>
+<hr>
+<p>
+  <strong>Description:</strong>
+  <textarea rows="4" cols="150" readonly>
+  <%= @diary.description %>
+  </textarea>
+</p>
+
+<hr>
+<p>
+  <strong>Comments:</strong>
+  <textarea rows="4" cols="150" readonly>
+  <%= @diary.comments %>
+  </textarea>
+</p>
+<hr>
+<p>
+  <strong>Entered by:</strong>
+  <%= @diary.user.email %>
+</p>
+<hr>
+<p>
+  <strong>Active:</strong>
+  <%= @diary.active %>
+</p>
+<hr>
+<%= link_to 'Edit', edit_diary_path(@diary) %> |
+<%= link_to 'Back', diaries_path %>

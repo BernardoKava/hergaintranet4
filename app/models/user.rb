@@ -8,4 +8,10 @@ class User < ApplicationRecord
 
   has_many :service_providers
   has_many :resources
+  has_many :meetings
+  has_many :diaries
+
+  def is_admin?
+    self.admin #returns a boolean
+  end
 end
