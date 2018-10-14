@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_10_13_191653) do
+ActiveRecord::Schema.define(version: 2018_10_14_071546) do
 
   create_table "diaries", force: :cascade do |t|
     t.string "name"
@@ -35,6 +35,9 @@ ActiveRecord::Schema.define(version: 2018_10_13_191653) do
     t.text "description"
     t.text "recurring"
     t.text "comments"
+    t.string "address"
+    t.float "longitude"
+    t.float "latitude"
   end
 
   create_table "resources", force: :cascade do |t|
@@ -44,6 +47,9 @@ ActiveRecord::Schema.define(version: 2018_10_13_191653) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "link"
+    t.string "address"
+    t.float "longitude"
+    t.float "latitude"
   end
 
   create_table "service_providers", force: :cascade do |t|
@@ -57,6 +63,8 @@ ActiveRecord::Schema.define(version: 2018_10_13_191653) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "link"
+    t.float "longitude"
+    t.float "latitude"
   end
 
   create_table "users", force: :cascade do |t|

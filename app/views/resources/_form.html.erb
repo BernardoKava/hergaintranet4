@@ -25,7 +25,13 @@
     <%= form.label :description %>
     <%= form.text_area :description , class: 'form-control'%>
 
+      <%= form.label :address %>
+      <%= form.text_area :address, class: 'form-control' %>
 
+      <%= form.hidden_field :longitude, class: 'form-control'%>
+
+
+      <%= form.hidden_field  :latitude, class: 'form-control'%>
 
     <%= form.hidden_field :user_id ,value: current_user.id %>
 

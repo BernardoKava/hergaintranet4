@@ -257,6 +257,7 @@ GEM
     font-awesome-rails (4.7.0.4)
       railties (>= 3.2, < 6.0)
     formatador (0.2.5)
+    geocoder (1.5.0)
     globalid (0.4.1)
       activesupport (>= 4.2.0)
     gravtastic (3.2.6)
@@ -488,6 +489,7 @@ DEPENDENCIES
   devise
   faker (= 1.7.3)
   fog (= 1.42)
+  geocoder
   gravtastic
   guard (= 2.14.1)
   guard-minitest (= 2.4.6)
