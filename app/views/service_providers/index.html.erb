@@ -47,4 +47,6 @@
 <hr>
 <%= will_paginate @service_providers %>
 <hr>
+<% if current_user.admin == true %>
 <%= link_to 'New Service Provider', new_service_provider_path, class:"btn btn-primary" %>
+<% end %>

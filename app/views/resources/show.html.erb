@@ -18,24 +18,30 @@
 <hr/>
 <p>
   <strong>Address:</strong>
+  <textarea rows="1" cols="150" readonly>
   <%= @resource.address %>
+  </textarea>
 </p>
 <hr/>
 <p>
   <strong>longitude:</strong>
+  <textarea rows="1" cols="150" readonly>
   <%= @resource.longitude %>
+  </textarea>
 </p>
 <hr/>
 <p>
   <strong>latitude:</strong>
+  <textarea rows="1" cols="150" readonly>
   <%= @resource.latitude %>
+  </textarea>
 </p>
 <hr/>
-<p>
-  <strong>User:</strong>
-  <%= @resource.user_id %>
-</p>
+
 <hr/>
 <hr/>
+
+<% if current_user.admin == true %>
 <%= link_to 'Edit', edit_resource_path(@resource) %> |
+<% end %>
 <%= link_to 'Back', resources_path %>

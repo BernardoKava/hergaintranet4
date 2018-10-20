@@ -36,5 +36,6 @@
 <hr>
 <%= will_paginate @resources %>
 <hr>
-
+<% if current_user.admin == true %>
 <%= link_to 'New Resource', new_resource_path ,class:"btn btn-primary" %>
+<% end %>

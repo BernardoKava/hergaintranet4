@@ -7,45 +7,51 @@
 <hr/>
 <p>
   <strong>Name:</strong>
-
   <%= link_to @service_provider.name , @service_provider.link%>
-
 </p>
 <hr/>
 <p>
   <strong>Address:</strong>
+  <textarea rows="4" cols="150" readonly>
   <%= @service_provider.address %>
+  </textarea>
 </p>
 <hr/>
 <p>
   <strong>Longitude:</strong>
+  <textarea rows="1" cols="150" readonly>
   <%= @service_provider.longitude %>
+  </textarea>
 </p>
 <hr/>
 <p>
   <strong>Latitude:</strong>
+  <textarea rows="1" cols="150" readonly>
   <%= @service_provider.latitude %>
+  </textarea>
 </p>
 <hr/>
 <p>
   <strong>Telephone:</strong>
+  <textarea rows="1" cols="150" readonly>
   <%= @service_provider.telephone %>
+  </textarea>
 </p>
 <hr/>
 <p>
-  <strong>Email:</strong>
+  <strong>Provider Email:</strong>
+  <textarea rows="1" cols="150" readonly>
   <%= @service_provider.email %>
+  </textarea>
 </p>
 <hr/>
 <p>
   <strong>Acc number:</strong>
+  <textarea rows="1" cols="150" readonly>
   <%= @service_provider.acc_number %>
+  </textarea>
 </p>
 <hr/>
-<p>
-  <strong>Active:</strong>
-  <%= @service_provider.active %>
-</p>
 
 
 <hr/>

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_10_14_071546) do
+ActiveRecord::Schema.define(version: 2018_10_20_074238) do
 
   create_table "diaries", force: :cascade do |t|
     t.string "name"
@@ -65,6 +65,21 @@ ActiveRecord::Schema.define(version: 2018_10_14_071546) do
     t.string "link"
     t.float "longitude"
     t.float "latitude"
+  end
+
+  create_table "todo_items", force: :cascade do |t|
+    t.string "content"
+    t.integer "todo_list_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["todo_list_id"], name: "index_todo_items_on_todo_list_id"
+  end
+
+  create_table "todo_lists", force: :cascade do |t|
+    t.string "title"
+    t.text "description"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "users", force: :cascade do |t|

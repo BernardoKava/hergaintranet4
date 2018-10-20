@@ -16,6 +16,7 @@
               <li><%= link_to "Service Providers",  service_providers_path %></li>
               <li><%= link_to "Resources",  resources_path %></li>
               <li><%= link_to "Planner",  meetings_path %></li>
+              <li><%= link_to "ToDo List",  todo_lists_path %></li>
               <% if current_user.officer && (current_user.generic || current_user.admin) == true %>
               <li><%= link_to "Diary",  diaries_path %></li>
               <% end %>
