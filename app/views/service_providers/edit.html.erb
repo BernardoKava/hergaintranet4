@@ -3,5 +3,9 @@
 
 <%= render 'form', service_provider: @service_provider %>
 
-<%= link_to 'Show', @service_provider %> |
-<%= link_to 'Back', service_providers_path %>
+
+
+<div class="links">
+  <%= link_to 'View', @service_provider ,class: 'fa fa-eye'%> |
+  <%= link_to 'Back', service_providers_path,class: 'fa fa-arrow-circle-o-left' %>
+</div>

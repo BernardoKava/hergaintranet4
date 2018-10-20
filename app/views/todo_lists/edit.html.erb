@@ -1,6 +1,11 @@
+<% provide(:title, "Edit ToDo") %>
 <h1>Editing Todo List</h1>
 
 <%= render 'form', todo_list: @todo_list %>
 
-<%= link_to 'Show', @todo_list %> |
-<%= link_to 'Back', todo_lists_path %>
+
+<div class="links">
+  <%= link_to 'View', @todo_list ,class: 'fa fa-eye'%> |
+  <%= link_to 'Back', todo_lists_path,class: 'fa fa-arrow-circle-o-left' %>
+
+</div>

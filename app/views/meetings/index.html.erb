@@ -48,12 +48,12 @@
         <td class = "text"><%= meeting.start_time %></td>
         <td class = "text"><%= meeting.end_time %></td>
         <td><%= meeting.user.email %></td>
-        <td><%= link_to 'View', meeting %></td>
+        <td><%= link_to 'View', meeting ,class: "fa fa-eye" %></td>
 
-        <td><%= link_to 'Edit', edit_meeting_path(meeting) %></td>
+        <td><%= link_to 'Edit', edit_meeting_path(meeting),class: "fa fa-pencil" %></td>
 
         <% if current_user.admin == true %>
-        <td><%= link_to 'Destroy', meeting, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Delete', meeting, method: :delete, data: { confirm: 'Are you sure?' },class: "fa fa-close" %></td>
         <% end %>
       </tr>
     <% end %>

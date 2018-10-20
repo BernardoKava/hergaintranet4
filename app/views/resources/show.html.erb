@@ -6,7 +6,7 @@
 <hr/>
 <p>
   <strong>Name:</strong>
-  <%= link_to @resource.name, @resource.link %>
+  <%= link_to @resource.name, @resource.link , class: 'fa fa-external-link'%>
 </p>
 <hr/>
 <p>
@@ -41,7 +41,11 @@
 <hr/>
 <hr/>
 
-<% if current_user.admin == true %>
-<%= link_to 'Edit', edit_resource_path(@resource) %> |
-<% end %>
-<%= link_to 'Back', resources_path %>
+
+<div class="links">
+  <% if current_user.admin == true %>
+    <%= link_to 'Edit', edit_resource_path(@resource) , class: "fa fa-pencil"%> |
+  <% end %>
+  <%= link_to 'Back', resources_path, class:"fa fa-arrow-circle-o-left" %>
+
+</div>

@@ -1,3 +1,5 @@
+<% provide(:title, "View ToDo") %>
+
 <p id="notice"><%= notice %></p>
 
 
@@ -30,7 +32,7 @@
 <div class="links">
   <%= link_to 'Edit', edit_todo_list_path(@todo_list), class: "fa fa-pencil" %> |
   <%= link_to 'Delete', todo_list_path(@todo_list), method: :delete, data: {confirm: "Are you sure?"} ,
-              class:"fa fa-close"%>|
+              class:"fa fa-close"%> |
   <%= link_to 'Back', todo_lists_path , class:"fa fa-arrow-circle-o-left"%>
 </div>
 

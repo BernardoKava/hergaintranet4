@@ -5,7 +5,7 @@ class MeetingsController < ApplicationController
   # GET /meetings.json
   def index
     @meetings = Meeting.all
-    @activemeetings = (Meeting.where(active: true)).paginate(page: params[:page], :per_page => 5)
+    @activemeetings = (Meeting.where(active: true)).paginate(page: params[:page], :per_page => 5).order("created_at DESC")
   end
 
   # GET /meetings/1

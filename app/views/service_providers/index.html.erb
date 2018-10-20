@@ -17,7 +17,6 @@
       <th class="col-xs-1"></th>
       <th class="col-xs-1"></th>
       <th class="col-xs-1"></th>
-
     </tr>
   </thead>
   <tbody>
@@ -30,11 +29,12 @@
         <td  class="col-xs-1"><%= service_provider.acc_number %></td>
         <td  class="col-xs-1"><%= service_provider.active %></td>
         <td  class="col-xs-1"><%= service_provider.user.email %></td>
-        <td  class="col-xs-1"><%= link_to 'View', service_provider %></td>
+        <td  class="col-xs-1"><%= link_to 'View', service_provider, class: "fa fa-eye" %></td>
 
         <% if current_user.admin == true %>
-          <td><%= link_to 'Edit', edit_service_provider_path(service_provider) %></td>
-          <td><%= link_to 'Destroy', service_provider, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+          <td><%= link_to 'Edit', edit_service_provider_path(service_provider), class: "fa fa-pencil" %></td>
+          <td><%= link_to 'Delete', service_provider, method: :delete, data: { confirm: 'Are you sure?' },
+                  class: "fa fa-close"%></td>
 
         <% end %>
 
@@ -47,6 +47,10 @@
 <hr>
 <%= will_paginate @service_providers %>
 <hr>
-<% if current_user.admin == true %>
-<%= link_to 'New Service Provider', new_service_provider_path, class:"btn btn-primary" %>
-<% end %>
+
+<div class="links">
+  <% if current_user.admin == true %>
+    <%= link_to 'New Service Provider', new_service_provider_path, class:'fa fa-plus-circle' %>
+  <% end %>
+
+</div>

@@ -22,11 +22,11 @@
         <td class="col-xs-1"><%= resource.name %></td>
         <td class="col-xs-10"><%= resource.description %></td>
         <td class="col-xs-1"><%= resource.user.email %></td>
-        <td class="col-xs-1"><%= link_to 'View', resource %></td>
+        <td class="col-xs-1"><%= link_to 'View', resource,class: "fa fa-eye"  %></td>
 
         <% if current_user.admin == true %>
-        <td><%= link_to 'Edit', edit_resource_path(resource) %></td>
-        <td><%= link_to 'Destroy', resource, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Edit', edit_resource_path(resource),class: "fa fa-pencil" %></td>
+        <td><%= link_to 'Destroy', resource, method: :delete, data: { confirm: 'Are you sure?' },class: "fa fa-close" %></td>
         <% end %>
       </tr>
     <% end %>
@@ -37,5 +37,8 @@
 <%= will_paginate @resources %>
 <hr>
 <% if current_user.admin == true %>
-<%= link_to 'New Resource', new_resource_path ,class:"btn btn-primary" %>
+  <div class="links">
+    <%= link_to 'New Resource', new_resource_path ,class:'fa fa-plus-circle' %>
+  </div>
+
 <% end %>
