@@ -1,3 +1,7 @@
+
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
+
 <%= form_with(model: todo_list, local: true) do |form| %>
   <% if todo_list.errors.any? %>
     <div id="error_explanation">
@@ -11,17 +15,20 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= form.label :title %>
-    <%= form.text_field :title %>
-  </div>
 
-  <div class="field">
+    <%= form.label :title %>
+    <%= form.text_field :title , class: 'form-control' %>
+
+<br>
+
     <%= form.label :description %>
-    <%= form.text_area :description %>
-  </div>
+    <%= form.text_area :description, class: 'form-control'  %>
+
+<br>
 
   <div class="actions">
     <%= form.submit %>
   </div>
 <% end %>
+  </div>
+</div>
