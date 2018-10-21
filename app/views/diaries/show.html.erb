@@ -41,5 +41,11 @@
   <%= @diary.active %>
 </p>
 <hr>
-<%= link_to 'Edit', edit_diary_path(@diary) %> |
-<%= link_to 'Back', diaries_path %>
+
+<div class="links">
+
+  <%= link_to 'Edit', edit_diary_path(@diary), class: "fa fa-pencil"  %> |
+
+  <%= link_to 'Back', diaries_path, class:"fa fa-arrow-circle-o-left" %>
+</div>
+

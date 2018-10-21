@@ -3,8 +3,12 @@
 
 <%= render 'formedit', meeting: @meeting %>
 
-<%= link_to 'Show', @meeting %> |
-<%= link_to 'Back', meetings_path %>
 
 
 
+<div class="links">
+
+  <%= link_to 'View', @meeting, class: "fa fa-eye"  %> |
+
+  <%= link_to 'Back', meetings_path, class:"fa fa-arrow-circle-o-left" %>
+</div>

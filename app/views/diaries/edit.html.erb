@@ -3,5 +3,12 @@
 
 <%= render 'form', diary: @diary %>
 
-<%= link_to 'Show', @diary %> |
-<%= link_to 'Back', diaries_path %>
+
+
+
+<div class="links">
+
+  <%= link_to 'View', @diary, class: "fa fa-eye"  %> |
+
+  <%= link_to 'Back', diaries_path , class:"fa fa-arrow-circle-o-left" %>
+</div>
