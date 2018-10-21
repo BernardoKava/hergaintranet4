@@ -25,10 +25,13 @@
     <%= form.text_area :description, class: 'form-control'  %>
 
 <br>
+      <%= form.label :Open %>
+      <%= form.check_box :active,{checked: true} %>
+      <br>
+      <br>
 
-  <div class="actions">
     <%= form.submit %>
-  </div>
+
 <% end %>
   </div>
 </div>

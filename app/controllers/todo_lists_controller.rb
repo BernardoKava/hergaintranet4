@@ -4,7 +4,8 @@ class TodoListsController < ApplicationController
   # GET /todo_lists
   # GET /todo_lists.json
   def index
-    @todo_lists = TodoList.order("created_at DESC").paginate(page: params[:page], :per_page => 3)
+    @all_todo_lists = TodoList.order("created_at DESC").paginate(page: params[:page], :per_page => 5)
+    @todo_lists = (current_user.todo_lists.where(active: true)).paginate(page: params[:page], :per_page => 3)
   end
 
   # GET /todo_lists/1
@@ -69,6 +70,6 @@ class TodoListsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def todo_list_params
-      params.require(:todo_list).permit(:title, :description)
+      params.require(:todo_list).permit(:title, :description, :user_id, :active)
     end
 end
