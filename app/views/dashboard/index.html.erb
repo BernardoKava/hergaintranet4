@@ -102,26 +102,8 @@
 <% end %>
 
 
-<hr>
-<hr>
-
-<h2><%= link_to "Personal Planner / Calendar",diaries_path, class: "fa fa-database" %></h2>
-<hr>
 
 
-<%= month_calendar(events:@diaries, attribute: :start_time, end_attribute: :end_time) do |day, diaries| %>
 
-  <div> <%= day %></div>
-
-
-  <% diaries.each do |diary| %>
-    <div class = "meeting_display">
-      <Strong><%= link_to diary.name, diary %></Strong>
-      <hr>
-    </div>
-
-  <% end %>
-
-<% end %>
 
 

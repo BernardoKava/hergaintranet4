@@ -8,7 +8,6 @@ Rails.application.routes.draw do
   end
   devise_for :users
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
-  resources :diaries
   resources :meetings
   resources :resources
   resources :service_providers
