@@ -86,7 +86,25 @@
 <h2><%= link_to "House Planner / Calendar",meetings_path, class: "fa fa-database" %></h2>
 <hr>
 
-<%= month_calendar(events:@meetings, attribute: :start_time, end_attribute: :end_time) do |day, meetings| %>
+<%= month_calendar(events:@activemeetings, attribute: :start_time, end_attribute: :end_time) do |day, meetings| %>
+
+  <div> <%= day %></div>
+
+
+  <% meetings.each do |meeting| %>
+    <div class = "meeting_display">
+      <Strong><%= link_to meeting.name, meeting %></Strong>
+      <hr>
+    </div>
+
+  <% end %>
+
+<% end %>
+
+<hr>
+<h2><%= link_to "Personal Planner / Calendar",meetings_path, class: "fa fa-database" %></h2>
+<hr>
+<%= month_calendar(events:@usermeetings, attribute: :start_time, end_attribute: :end_time) do |day, meetings| %>
 
   <div> <%= day %></div>
 
@@ -102,6 +120,7 @@
 <% end %>
 
 
+<hr>
 
 
 

@@ -9,8 +9,9 @@
 <%= link_to 'New Activity', new_meeting_path, class: "btn btn-primary" %>
 
 <hr>
+<strong><h2>House Planner</h2></strong>
 
-<%= month_calendar(events:@meetings, attribute: :start_time, end_attribute: :end_time) do |day, meetings| %>
+<%= month_calendar(events:@activemeetings, attribute: :start_time, end_attribute: :end_time) do |day, meetings| %>
 
   <div> <%= day %></div>
 
@@ -28,6 +29,23 @@
 
 
 <hr>
+
+<strong><h2>Personal Planner</h2></strong>
+
+<%= month_calendar(events:@usermeetings, attribute: :start_time, end_attribute: :end_time) do |day, meetings| %>
+
+  <div> <%= day %></div>
+
+
+  <% meetings.each do |meeting| %>
+    <div class = "meeting_display">
+      <Strong><%= link_to meeting.name, meeting %></Strong>
+      <hr>
+    </div>
+
+  <% end %>
+
+<% end %>
 <hr>
 
 <table class=" table table-striped">

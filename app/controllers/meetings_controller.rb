@@ -6,6 +6,8 @@ class MeetingsController < ApplicationController
   def index
     @meetings = Meeting.all
     @activemeetings = (Meeting.where(active: true)).paginate(page: params[:page], :per_page => 5).order("created_at DESC")
+    @usermeetings = (current_user.meetings.where(active: true, personal: true)).paginate(page: params[:page],
+                                                                            :per_page => 5).order("created_at DESC")
   end
 
   # GET /meetings/1
@@ -71,6 +73,6 @@ class MeetingsController < ApplicationController
     # Never trust parameters from the scary internet, only allow the white list through.
     def meeting_params
       params.require(:meeting).permit(:name, :start_time, :end_time, :user_id, :active, :comments, :description,
-                                      :address, :longitude, :latitude)
+                                      :address, :longitude, :latitude, :personal)
     end
 end
