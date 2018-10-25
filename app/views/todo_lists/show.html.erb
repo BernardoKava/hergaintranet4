@@ -1,0 +1,52 @@
+<p id="notice"><%= notice %></p>
+
+
+<p>
+  <strong>ToDo List Title:</strong>
+  <textarea class="input_text_area"  rows="1" cols="170" readonly>
+  <%= @todo_list.name %>
+  </textarea>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <textarea class="input_text_area"  rows="1" cols="170" readonly>
+  <%= @todo_list.description %>
+  </textarea>
+</p>
+
+<br/>
+<hr>
+
+<div class="jumbotron">
+
+  <table class="table table-hover">
+    <thead>
+    <tr>
+
+    </tr>
+    </thead>
+
+    <tbody>
+    <% for todo_item in @todo_list.todo_items %>
+      <tr>
+        <% if  todo_item.complete == true %>
+
+          <td style="opacity: 0.4" ><strike><%=h todo_item.name %></strike></td>
+        <% else %>
+          <td><%=h todo_item.name %></td>
+        <% end %>
+      </tr>
+    <% end %>
+    </tbody>
+  </table>
+
+
+
+</div>
+
+
+
+
+<%= link_to 'Edit', edit_todo_list_path(@todo_list), class: 'fa fa-edit' %> |
+<%= link_to 'Back', todo_lists_path, class: 'fa fa-back' %>

@@ -5,10 +5,11 @@ class MeetingsController < ApplicationController
   # GET /meetings.json
   def index
     @meetings = Meeting.all
-    @activemeetings = (Meeting.where(active: true)).paginate(page: params[:page], :per_page => 5).order("created_at DESC")
-    @usermeetings = (current_user.meetings.where(active: true, personal: true)).paginate(page: params[:page],
-                                                                            :per_page => 5).order("created_at DESC")
+    @activemeetings = (Meeting.where(active: true, personal:false)).paginate(page: params[:page], :per_page => 5).order("created_at DESC")
+
   end
+
+
 
   # GET /meetings/1
   # GET /meetings/1.json
@@ -63,6 +64,8 @@ class MeetingsController < ApplicationController
       format.json { head :no_content }
     end
   end
+
+
 
   private
     # Use callbacks to share common setup or constraints between actions.

@@ -2,15 +2,115 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="30cef00a-dea7-4c77-8dfe-04e4353e58b5" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/views/dashboard/personal.html.erb" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/views/todo_lists/_todo_item_fields.html.erb" />
+      <change beforePath="$PROJECT_DIR$/.idea/hergaintranet.iml" afterPath="$PROJECT_DIR$/.idea/hergaintranet.iml" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
+      <change beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
+      <change beforePath="$PROJECT_DIR$/app/assets/javascripts/application.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/application.js" />
+      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/custom.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/custom.scss" />
       <change beforePath="$PROJECT_DIR$/app/controllers/dashboard_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/dashboard_controller.rb" />
       <change beforePath="$PROJECT_DIR$/app/controllers/meetings_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/meetings_controller.rb" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/todo_items_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/todo_items_controller.rb" />
       <change beforePath="$PROJECT_DIR$/app/views/dashboard/index.html.erb" afterPath="$PROJECT_DIR$/app/views/dashboard/index.html.erb" />
-      <change beforePath="$PROJECT_DIR$/app/views/meetings/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/meetings/_form.html.erb" />
-      <change beforePath="$PROJECT_DIR$/app/views/meetings/_formedit.html.erb" afterPath="$PROJECT_DIR$/app/views/meetings/_formedit.html.erb" />
+      <change beforePath="$PROJECT_DIR$/app/views/layouts/_header.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/_header.html.erb" />
+      <change beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
       <change beforePath="$PROJECT_DIR$/app/views/meetings/index.html.erb" afterPath="$PROJECT_DIR$/app/views/meetings/index.html.erb" />
+      <change beforePath="$PROJECT_DIR$/app/views/resources/index.html.erb" afterPath="$PROJECT_DIR$/app/views/resources/index.html.erb" />
+      <change beforePath="$PROJECT_DIR$/app/views/service_providers/index.html.erb" afterPath="$PROJECT_DIR$/app/views/service_providers/index.html.erb" />
+      <change beforePath="$PROJECT_DIR$/app/views/todo_items/_form.html.erb" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/views/todo_items/_todo_item.html.erb" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/config/initializers/assets.rb" afterPath="$PROJECT_DIR$/config/initializers/assets.rb" />
+      <change beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
       <change beforePath="$PROJECT_DIR$/db/development.sqlite3" afterPath="$PROJECT_DIR$/db/development.sqlite3" />
       <change beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
       <change beforePath="$PROJECT_DIR$/log/development.log" afterPath="$PROJECT_DIR$/log/development.log" />
+      <change beforePath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/-I/-IvHQSJOLgBSFHTH-NJeeTg5IXs8YzFLBLZ68qOulFs.cache" afterPath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/-I/-IvHQSJOLgBSFHTH-NJeeTg5IXs8YzFLBLZ68qOulFs.cache" />
+      <change beforePath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/00/00UT8uv5Mu0F53MtqOU8OirjiRen5VRcOSeQNNoG4D4.cache" afterPath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/00/00UT8uv5Mu0F53MtqOU8OirjiRen5VRcOSeQNNoG4D4.cache" />
+      <change beforePath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/34/342SwZh9y0o3c0M8tyMv8bauG6G1leiAc7zPmnDhwbk.cache" afterPath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/34/342SwZh9y0o3c0M8tyMv8bauG6G1leiAc7zPmnDhwbk.cache" />
+      <change beforePath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/3T/3TTP6H-LglULSx9p4Vk1kR98IsnZ0b8EpYW8W0Q-0DU.cache" afterPath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/3T/3TTP6H-LglULSx9p4Vk1kR98IsnZ0b8EpYW8W0Q-0DU.cache" />
+      <change beforePath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/3q/3q3qdvmleZ3Upb4XJsZC6B_SMu6c7nU-crb_l2o-dXE.cache" afterPath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/3q/3q3qdvmleZ3Upb4XJsZC6B_SMu6c7nU-crb_l2o-dXE.cache" />
+      <change beforePath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/5D/5DNzxgHAYxQg3LlKZLX0H4sYhc-roaNyYiaYoZx-6xI.cache" afterPath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/5D/5DNzxgHAYxQg3LlKZLX0H4sYhc-roaNyYiaYoZx-6xI.cache" />
+      <change beforePath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/5g/5ga-31UoeD_bvKwLVq7FimX_ZB0YXjSMCKa02nAcZiA.cache" afterPath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/5g/5ga-31UoeD_bvKwLVq7FimX_ZB0YXjSMCKa02nAcZiA.cache" />
+      <change beforePath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/6Q/6Qn0BJfMiUy04k158ryXCgUXEzI5ehURhyQ2tXt-qiM.cache" afterPath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/6Q/6Qn0BJfMiUy04k158ryXCgUXEzI5ehURhyQ2tXt-qiM.cache" />
+      <change beforePath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/80/80IzdGTBceqbS2D4w75YR9Iha3ZYKaw-tzV5psfoMXQ.cache" afterPath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/80/80IzdGTBceqbS2D4w75YR9Iha3ZYKaw-tzV5psfoMXQ.cache" />
+      <change beforePath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/87/87mJ6hq7hzwDXcNzpuTGABCMFtqe_wPlpiK1vyMhRdE.cache" afterPath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/87/87mJ6hq7hzwDXcNzpuTGABCMFtqe_wPlpiK1vyMhRdE.cache" />
+      <change beforePath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/9P/9PxuBVfyJtIW3el2CMx1nQa8jCGrFvOBxHBahZ5hng4.cache" afterPath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/9P/9PxuBVfyJtIW3el2CMx1nQa8jCGrFvOBxHBahZ5hng4.cache" />
+      <change beforePath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/C0/C0aK8gfd_0QVQGP_KDUs_qcoq6zJfwWfNi8rkAS60ws.cache" afterPath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/C0/C0aK8gfd_0QVQGP_KDUs_qcoq6zJfwWfNi8rkAS60ws.cache" />
+      <change beforePath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/D6/D6GxsxOhiDIkgyDZjb1mt18wHs8E20hETwOfKJHQGPQ.cache" afterPath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/D6/D6GxsxOhiDIkgyDZjb1mt18wHs8E20hETwOfKJHQGPQ.cache" />
+      <change beforePath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/DU/DUqlw_HDBO9CgAp-TynNvLnfuKOuIgljw4I8jsUAzow.cache" afterPath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/DU/DUqlw_HDBO9CgAp-TynNvLnfuKOuIgljw4I8jsUAzow.cache" />
+      <change beforePath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/D_/D_hGjp7QYYZA-YTcve0fmtnEgA3IvBZFc5tCGxEZMYE.cache" afterPath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/D_/D_hGjp7QYYZA-YTcve0fmtnEgA3IvBZFc5tCGxEZMYE.cache" />
+      <change beforePath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/EJ/EJcvpA4ZwthsgpBvt5kZ3s5cuVZQaQ8jOeC0Pey0tPA.cache" afterPath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/EJ/EJcvpA4ZwthsgpBvt5kZ3s5cuVZQaQ8jOeC0Pey0tPA.cache" />
+      <change beforePath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/Eo/Eo_HxiYki8OMQD5QoJYuRu_AMNrZihWkiLwbZm8VJb4.cache" afterPath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/Eo/Eo_HxiYki8OMQD5QoJYuRu_AMNrZihWkiLwbZm8VJb4.cache" />
+      <change beforePath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/FH/FH4eulJCm4Tp6LdH-zF1yAt22tPg3IWChatrulA05vg.cache" afterPath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/FH/FH4eulJCm4Tp6LdH-zF1yAt22tPg3IWChatrulA05vg.cache" />
+      <change beforePath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/Gr/Gr3FyxxiEn8aMI3eIWPL4QOqvpC5ykDrT-K9nTo9L1o.cache" afterPath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/Gr/Gr3FyxxiEn8aMI3eIWPL4QOqvpC5ykDrT-K9nTo9L1o.cache" />
+      <change beforePath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/Gv/Gv7uqqKhJC_CDf3buTDET_iulZtuPSwWfnJPwuLnW94.cache" afterPath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/Gv/Gv7uqqKhJC_CDf3buTDET_iulZtuPSwWfnJPwuLnW94.cache" />
+      <change beforePath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/HC/HCDOUd7-S45aJ_PjVAC_Vmjyud3i1aQv4cE3t9_Z3Dw.cache" afterPath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/HC/HCDOUd7-S45aJ_PjVAC_Vmjyud3i1aQv4cE3t9_Z3Dw.cache" />
+      <change beforePath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/HW/HWqRkCJiRS2xQlqOuYGzfRY2fTmL7G0nApnCfdVmpdc.cache" afterPath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/HW/HWqRkCJiRS2xQlqOuYGzfRY2fTmL7G0nApnCfdVmpdc.cache" />
+      <change beforePath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/Hm/HmXucR0M_Bf_vT9cDdftDkcqfQZrFTg89DOuedDxa6Q.cache" afterPath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/Hm/HmXucR0M_Bf_vT9cDdftDkcqfQZrFTg89DOuedDxa6Q.cache" />
+      <change beforePath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/Ib/IbeTF1Sa6F46YIHYO_mRxzOv-vAjMEkg2zNTKGi5MDk.cache" afterPath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/Ib/IbeTF1Sa6F46YIHYO_mRxzOv-vAjMEkg2zNTKGi5MDk.cache" />
+      <change beforePath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/JT/JTXszND4ZePdm8kdAYM9UQ4DyMOioF6eIMoF_QK7xNE.cache" afterPath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/JT/JTXszND4ZePdm8kdAYM9UQ4DyMOioF6eIMoF_QK7xNE.cache" />
+      <change beforePath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/M8/M8IpXAC18MJpP3bXnY2mIy7RCMOSpBKtEkAD2ESp2wg.cache" afterPath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/M8/M8IpXAC18MJpP3bXnY2mIy7RCMOSpBKtEkAD2ESp2wg.cache" />
+      <change beforePath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/Op/OpYiWsCFK2FlTwr0LrGZsT4bzF1-I128P_2DFMZHt8E.cache" afterPath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/Op/OpYiWsCFK2FlTwr0LrGZsT4bzF1-I128P_2DFMZHt8E.cache" />
+      <change beforePath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/P7/P7IpKoNacZvBMD9hZRdLfqsUccrudTYgetkqr1uIMFY.cache" afterPath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/P7/P7IpKoNacZvBMD9hZRdLfqsUccrudTYgetkqr1uIMFY.cache" />
+      <change beforePath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/PS/PSlaapJ21e8mi3lK5r2kva-h6lhfzhdO90uo1nul2wU.cache" afterPath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/PS/PSlaapJ21e8mi3lK5r2kva-h6lhfzhdO90uo1nul2wU.cache" />
+      <change beforePath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/Qt/QtuZZHwKjFlwHuZesHgrJBF8Fm3jXwpTga-OVCRyJIQ.cache" afterPath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/Qt/QtuZZHwKjFlwHuZesHgrJBF8Fm3jXwpTga-OVCRyJIQ.cache" />
+      <change beforePath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/Rb/Rbz2ppz8BUfpPWlnuL2Yg5B8xL_N5hb1fX4RyCgQIUA.cache" afterPath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/Rb/Rbz2ppz8BUfpPWlnuL2Yg5B8xL_N5hb1fX4RyCgQIUA.cache" />
+      <change beforePath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/Rt/RthsNKWusiRX-Dw0VRxNd5hO6ctTL7pw3S6Bm6A-q40.cache" afterPath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/Rt/RthsNKWusiRX-Dw0VRxNd5hO6ctTL7pw3S6Bm6A-q40.cache" />
+      <change beforePath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/T9/T9qpWVS16U6J3b9HAYD7enWw9wK-veLYHpyEboCCyJU.cache" afterPath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/T9/T9qpWVS16U6J3b9HAYD7enWw9wK-veLYHpyEboCCyJU.cache" />
+      <change beforePath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/Tk/TkkvS4oCUsBC8w6HROGPDEnbfwUKXQsmJu6PDHbTZHE.cache" afterPath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/Tk/TkkvS4oCUsBC8w6HROGPDEnbfwUKXQsmJu6PDHbTZHE.cache" />
+      <change beforePath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/Tw/TwDML7eyuVe4kih1KgQJYATW3lzENZM5oG6mraEfDTY.cache" afterPath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/Tw/TwDML7eyuVe4kih1KgQJYATW3lzENZM5oG6mraEfDTY.cache" />
+      <change beforePath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/UZ/UZ5ApgDLVnYhtOf6Ntdt_neY1mdmMTmbsp0ooNdTXGw.cache" afterPath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/UZ/UZ5ApgDLVnYhtOf6Ntdt_neY1mdmMTmbsp0ooNdTXGw.cache" />
+      <change beforePath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/VC/VCIR-4MPanfhMEhrfCSxkDUzbelAAmR9PnfFjIywtIM.cache" afterPath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/VC/VCIR-4MPanfhMEhrfCSxkDUzbelAAmR9PnfFjIywtIM.cache" />
+      <change beforePath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/YK/YK0bD7zZDc-7tlmtLk-WIfMXyt0y697sXiOf5p3Un8c.cache" afterPath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/YK/YK0bD7zZDc-7tlmtLk-WIfMXyt0y697sXiOf5p3Un8c.cache" />
+      <change beforePath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/YN/YNS-mDlixrSmTCmULotjsXtWSfOYx3je5Kd6PhLsZMM.cache" afterPath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/YN/YNS-mDlixrSmTCmULotjsXtWSfOYx3je5Kd6PhLsZMM.cache" />
+      <change beforePath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/Z1/Z1F_2nxdRjZC4br9CzSorBg9WpDDr3PuFBtY4j8hL6Q.cache" afterPath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/Z1/Z1F_2nxdRjZC4br9CzSorBg9WpDDr3PuFBtY4j8hL6Q.cache" />
+      <change beforePath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/Zd/Zde3XwE0c3poX8JFxnjJBy5w1i9ALbJaGQQ4z7Un4L0.cache" afterPath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/Zd/Zde3XwE0c3poX8JFxnjJBy5w1i9ALbJaGQQ4z7Un4L0.cache" />
+      <change beforePath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/aS/aSH4RUcjMDG9qnShfYyGOPpXUx_xX77wJjzgExKq7e0.cache" afterPath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/aS/aSH4RUcjMDG9qnShfYyGOPpXUx_xX77wJjzgExKq7e0.cache" />
+      <change beforePath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/aT/aTjwZmC6qY8QAEZZxjmwdDk3G2J76BRe8_fW5853V7E.cache" afterPath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/aT/aTjwZmC6qY8QAEZZxjmwdDk3G2J76BRe8_fW5853V7E.cache" />
+      <change beforePath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/af/afRxMs-0sCnPaZKH3fDxJIXleocquUyrKVRNkbufErk.cache" afterPath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/af/afRxMs-0sCnPaZKH3fDxJIXleocquUyrKVRNkbufErk.cache" />
+      <change beforePath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/cc/ccoLN44Dd-Wg1zi_BDEXZ0WjftNbo3r1Gz1jfV7tmvA.cache" afterPath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/cc/ccoLN44Dd-Wg1zi_BDEXZ0WjftNbo3r1Gz1jfV7tmvA.cache" />
+      <change beforePath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/eW/eWSXjSXlcMDZFn1es16eEdY6gS-kY-zkTWZdME990qE.cache" afterPath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/eW/eWSXjSXlcMDZFn1es16eEdY6gS-kY-zkTWZdME990qE.cache" />
+      <change beforePath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/gO/gOcs4L3-gMxfRUQI5lBnU7ua-euW5X0kK-dUliPdXCE.cache" afterPath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/gO/gOcs4L3-gMxfRUQI5lBnU7ua-euW5X0kK-dUliPdXCE.cache" />
+      <change beforePath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/h4/h4nE9UHQ3VjOKHAKyfrcUtp0NttC8zqGgItNm1h0rEs.cache" afterPath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/h4/h4nE9UHQ3VjOKHAKyfrcUtp0NttC8zqGgItNm1h0rEs.cache" />
+      <change beforePath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/hv/hvHCWKIJitsGyus4w4HCIAkBUv4cCuja-jYuqWYQw38.cache" afterPath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/hv/hvHCWKIJitsGyus4w4HCIAkBUv4cCuja-jYuqWYQw38.cache" />
+      <change beforePath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/jY/jY-hUb_FL8gzVwUBOiDcgnBuZ3KEH0N_1UdfdlcrSIw.cache" afterPath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/jY/jY-hUb_FL8gzVwUBOiDcgnBuZ3KEH0N_1UdfdlcrSIw.cache" />
+      <change beforePath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/j_/j_HkLiRHXcol94Y1YJJhR-2FtekybbOyfQpfJtLFLEo.cache" afterPath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/j_/j_HkLiRHXcol94Y1YJJhR-2FtekybbOyfQpfJtLFLEo.cache" />
+      <change beforePath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/kC/kCgJfpZ4B1ciy-Reap_q43e4M2euFOz0FTyMxEGWO8Q.cache" afterPath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/kC/kCgJfpZ4B1ciy-Reap_q43e4M2euFOz0FTyMxEGWO8Q.cache" />
+      <change beforePath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/lL/lLPMXi4LI9Pj3wCQ6YkRSev37TcGCpy0OxkaugOplhQ.cache" afterPath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/lL/lLPMXi4LI9Pj3wCQ6YkRSev37TcGCpy0OxkaugOplhQ.cache" />
+      <change beforePath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/nE/nE6decmyY_PWW-BEcgstsvBcRm72uP_OYhJVu038zD0.cache" afterPath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/nE/nE6decmyY_PWW-BEcgstsvBcRm72uP_OYhJVu038zD0.cache" />
+      <change beforePath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/op/opM2w3gP-4hS_ZrAv1tyLMaBoQwPT1Zj3nKrLfu1t9k.cache" afterPath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/op/opM2w3gP-4hS_ZrAv1tyLMaBoQwPT1Zj3nKrLfu1t9k.cache" />
+      <change beforePath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/oy/oy9VYScRrN0prz4ZEKCaczwdMyJL23GXb2P8Ze9UsyY.cache" afterPath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/oy/oy9VYScRrN0prz4ZEKCaczwdMyJL23GXb2P8Ze9UsyY.cache" />
+      <change beforePath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/qD/qDQcXEn-NfxfQ1TkXpK6KIWNR5ICQ0evTG-haSNKwrw.cache" afterPath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/qD/qDQcXEn-NfxfQ1TkXpK6KIWNR5ICQ0evTG-haSNKwrw.cache" />
+      <change beforePath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/r-/r--ks3YVZEraiy7jUnpbSEH0vQSXfhjWhRQGNcE6JW8.cache" afterPath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/r-/r--ks3YVZEraiy7jUnpbSEH0vQSXfhjWhRQGNcE6JW8.cache" />
+      <change beforePath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/rL/rLwBR6KVXcmrm-qIDW25QMuQ5ZZMY4HzFZui6jp5RqE.cache" afterPath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/rL/rLwBR6KVXcmrm-qIDW25QMuQ5ZZMY4HzFZui6jp5RqE.cache" />
+      <change beforePath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/sK/sKzFIDE3qAod2NFXMfVrxq7ZRl5ojDegJQmIz4jUTow.cache" afterPath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/sK/sKzFIDE3qAod2NFXMfVrxq7ZRl5ojDegJQmIz4jUTow.cache" />
+      <change beforePath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/sO/sOWFHoPW8M5wYTGox59W0MCr3zmZkjFw5sw4iVL4IjU.cache" afterPath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/sO/sOWFHoPW8M5wYTGox59W0MCr3zmZkjFw5sw4iVL4IjU.cache" />
+      <change beforePath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/sS/sSbxYzSMNPBIsN-wpPpCgxL2aXyFMLUQPrfuoQNNCqY.cache" afterPath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/sS/sSbxYzSMNPBIsN-wpPpCgxL2aXyFMLUQPrfuoQNNCqY.cache" />
+      <change beforePath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/uN/uN-ncvCy6Ud9x2xMv0aUySBrlFbpHT0P5Ej_9NiYfsE.cache" afterPath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/uN/uN-ncvCy6Ud9x2xMv0aUySBrlFbpHT0P5Ej_9NiYfsE.cache" />
+      <change beforePath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/ue/ueyx_icKR8UEE_Vj5V3W0NHXzx2c0-3dUMLznOx-X8I.cache" afterPath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/ue/ueyx_icKR8UEE_Vj5V3W0NHXzx2c0-3dUMLznOx-X8I.cache" />
+      <change beforePath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/v0/v0YT8d7VgMmQBvhkc7QijdUVOILL-C25n2qY-Te2z2A.cache" afterPath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/v0/v0YT8d7VgMmQBvhkc7QijdUVOILL-C25n2qY-Te2z2A.cache" />
+      <change beforePath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/vf/vfumz7UBg0YwRSmW4RzWjT5ad1OuRVlm7Q0Jjl6LMck.cache" afterPath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/vf/vfumz7UBg0YwRSmW4RzWjT5ad1OuRVlm7Q0Jjl6LMck.cache" />
+      <change beforePath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/vv/vv7_GvIOSuHb1SOvVlHro8up5m4TucuI1JWzNN0om2E.cache" afterPath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/vv/vv7_GvIOSuHb1SOvVlHro8up5m4TucuI1JWzNN0om2E.cache" />
+      <change beforePath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/xA/xAj9pzIL-DHTybGzx8ex7e2uNAlFD42rdIzp7CT8BjM.cache" afterPath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/xA/xAj9pzIL-DHTybGzx8ex7e2uNAlFD42rdIzp7CT8BjM.cache" />
+      <change beforePath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/xW/xWZpzQlMThWjeDOXN3PIVXBAH_YQubddXCHb3rsF4_c.cache" afterPath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/xW/xWZpzQlMThWjeDOXN3PIVXBAH_YQubddXCHb3rsF4_c.cache" />
+      <change beforePath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/xc/xchYkLtN3UWxNbzLn5j-nsmKgAyaD7hTZCOLsOa49C8.cache" afterPath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/xc/xchYkLtN3UWxNbzLn5j-nsmKgAyaD7hTZCOLsOa49C8.cache" />
+      <change beforePath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/xe/xeAtjM7aLshDdqjkOmjeIU8551W9LGIoxHowWecDdUA.cache" afterPath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/xe/xeAtjM7aLshDdqjkOmjeIU8551W9LGIoxHowWecDdUA.cache" />
+      <change beforePath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/yl/yla0S9teCRyDhUIcAHyrT_nqtSbSG3eQ0EVHtwdn4oM.cache" afterPath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/yl/yla0S9teCRyDhUIcAHyrT_nqtSbSG3eQ0EVHtwdn4oM.cache" />
+      <change beforePath="$PROJECT_DIR$/tmp/cache/bootsnap-compile-cache/47/af3835fda6ffdc" afterPath="$PROJECT_DIR$/tmp/cache/bootsnap-compile-cache/47/af3835fda6ffdc" />
+      <change beforePath="$PROJECT_DIR$/tmp/cache/bootsnap-compile-cache/54/09682b84685449" afterPath="$PROJECT_DIR$/tmp/cache/bootsnap-compile-cache/54/09682b84685449" />
+      <change beforePath="$PROJECT_DIR$/tmp/cache/bootsnap-compile-cache/68/80c40519b262ac" afterPath="$PROJECT_DIR$/tmp/cache/bootsnap-compile-cache/68/80c40519b262ac" />
+      <change beforePath="$PROJECT_DIR$/tmp/cache/bootsnap-compile-cache/7d/f4a1e3b2053095" afterPath="$PROJECT_DIR$/tmp/cache/bootsnap-compile-cache/7d/f4a1e3b2053095" />
+      <change beforePath="$PROJECT_DIR$/tmp/cache/bootsnap-compile-cache/88/fea74e5eabd3ee" afterPath="$PROJECT_DIR$/tmp/cache/bootsnap-compile-cache/88/fea74e5eabd3ee" />
+      <change beforePath="$PROJECT_DIR$/tmp/cache/bootsnap-compile-cache/a2/53fd17e07f4309" afterPath="$PROJECT_DIR$/tmp/cache/bootsnap-compile-cache/a2/53fd17e07f4309" />
+      <change beforePath="$PROJECT_DIR$/tmp/cache/bootsnap-compile-cache/ab/d0d56de6b32e85" afterPath="$PROJECT_DIR$/tmp/cache/bootsnap-compile-cache/ab/d0d56de6b32e85" />
+      <change beforePath="$PROJECT_DIR$/tmp/cache/bootsnap-compile-cache/b2/cf89fa0c16282b" afterPath="$PROJECT_DIR$/tmp/cache/bootsnap-compile-cache/b2/cf89fa0c16282b" />
+      <change beforePath="$PROJECT_DIR$/tmp/cache/bootsnap-compile-cache/ba/62f7af1fc2dbc1" afterPath="$PROJECT_DIR$/tmp/cache/bootsnap-compile-cache/ba/62f7af1fc2dbc1" />
+      <change beforePath="$PROJECT_DIR$/tmp/cache/bootsnap-compile-cache/d0/86e280fc68e0bb" afterPath="$PROJECT_DIR$/tmp/cache/bootsnap-compile-cache/d0/86e280fc68e0bb" />
+      <change beforePath="$PROJECT_DIR$/tmp/cache/bootsnap-compile-cache/e3/0132a6f85b5fc8" afterPath="$PROJECT_DIR$/tmp/cache/bootsnap-compile-cache/e3/0132a6f85b5fc8" />
+      <change beforePath="$PROJECT_DIR$/tmp/cache/bootsnap-load-path-cache" afterPath="$PROJECT_DIR$/tmp/cache/bootsnap-load-path-cache" />
+      <change beforePath="$PROJECT_DIR$/tmp/pids/server.pid" afterPath="" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -39,78 +139,146 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="seeds.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/db/seeds.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="22" column="3" lean-forward="false" selection-start-line="22" selection-start-column="3" selection-end-line="22" selection-end-column="3" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_header.html.erb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/layouts/_header.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="20" column="50" lean-forward="false" selection-start-line="20" selection-start-column="50" selection-end-line="20" selection-end-column="50" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html.erb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/dashboard/index.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="853">
-              <caret line="88" column="33" lean-forward="false" selection-start-line="88" selection-start-column="33" selection-end-line="88" selection-end-column="33" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="show.html.erb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/meetings/show.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="828">
-              <caret line="46" column="0" lean-forward="true" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dashboard_controller.rb" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/controllers/dashboard_controller.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="schema.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/db/schema.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="594">
-              <caret line="34" column="23" lean-forward="false" selection-start-line="34" selection-start-column="23" selection-end-line="34" selection-end-column="23" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="meetings_controller.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/meetings_controller.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1350">
-              <caret line="75" column="80" lean-forward="false" selection-start-line="75" selection-start-column="80" selection-end-line="75" selection-end-column="80" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="vertical" split-proportion="0.5">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file leaf-file-name="index.html.erb" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/views/todo_lists/index.html.erb">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="72">
+                  <caret line="4" column="31" lean-forward="false" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="index.html.erb" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/views/service_providers/index.html.erb">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="149">
+                  <caret line="52" column="0" lean-forward="false" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="95" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="meetings_controller.rb" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/controllers/meetings_controller.rb">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="-684">
+                  <caret line="7" column="65" lean-forward="false" selection-start-line="7" selection-start-column="65" selection-end-line="7" selection-end-column="65" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="dashboard_controller.rb" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/controllers/dashboard_controller.rb">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="252">
+                  <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="personal.html.erb" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/app/views/dashboard/personal.html.erb">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="185">
+                  <caret line="20" column="17" lean-forward="false" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="17" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="index.html.erb" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/views/meetings/index.html.erb">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="108">
+                  <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="show.html.erb" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/views/todo_lists/show.html.erb">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="612">
+                  <caret line="34" column="33" lean-forward="false" selection-start-line="34" selection-start-column="33" selection-end-line="34" selection-end-column="33" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="_todo_item_fields.html.erb" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/views/todo_lists/_todo_item_fields.html.erb">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="293">
+                  <caret line="20" column="75" lean-forward="false" selection-start-line="20" selection-start-column="75" selection-end-line="20" selection-end-column="75" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="_form.html.erb" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/views/service_providers/_form.html.erb">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="36">
+                  <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="3" selection-end-column="40" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="custom.scss" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/custom.scss">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="5454">
+                  <caret line="303" column="1" lean-forward="false" selection-start-line="303" selection-start-column="1" selection-end-line="303" selection-end-column="1" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file leaf-file-name="index.html.erb" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/app/views/dashboard/index.html.erb">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="131">
+                  <caret line="85" column="23" lean-forward="false" selection-start-line="85" selection-start-column="23" selection-end-line="85" selection-end-column="23" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="routes.rb" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/config/routes.rb">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="90">
+                  <caret line="14" column="25" lean-forward="false" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="_header.html.erb" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/views/layouts/_header.html.erb">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="432">
+                  <caret line="42" column="0" lean-forward="true" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -118,56 +286,56 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/config/application.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/diaries_controller.rb" />
-        <option value="$PROJECT_DIR$/app/views/diaries/_form.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/diaries/index.html.erb" />
-        <option value="$PROJECT_DIR$/Gemfile" />
-        <option value="$PROJECT_DIR$/app/controllers/resources_controller.rb" />
-        <option value="$PROJECT_DIR$/app/views/service_providers/_form.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/resources/_form.html.erb" />
         <option value="$PROJECT_DIR$/config/initializers/geocoder.rb" />
         <option value="$PROJECT_DIR$/app/models/resource.rb" />
         <option value="$PROJECT_DIR$/app/models/service_provider.rb" />
         <option value="$PROJECT_DIR$/app/models/meeting.rb" />
-        <option value="$PROJECT_DIR$/config/routes.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/todo_items_controller.rb" />
-        <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/app/views/todo_items/_form.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/todo_items/_todo_item.html.erb" />
         <option value="$PROJECT_DIR$/app/views/service_providers/new.html.erb" />
         <option value="$PROJECT_DIR$/app/views/resources/new.html.erb" />
         <option value="$PROJECT_DIR$/app/views/resources/edit.html.erb" />
         <option value="$PROJECT_DIR$/app/views/meetings/show.html.erb" />
         <option value="$PROJECT_DIR$/app/views/service_providers/edit.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/resources/index.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/todo_lists/index.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/todo_lists/edit.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/service_providers/index.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/service_providers_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/resources/show.html.erb" />
         <option value="$PROJECT_DIR$/app/views/service_providers/show.html.erb" />
         <option value="$PROJECT_DIR$/app/views/meetings/edit.html.erb" />
         <option value="$PROJECT_DIR$/app/views/diaries/show.html.erb" />
         <option value="$PROJECT_DIR$/app/views/diaries/edit.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/todo_lists/show.html.erb" />
         <option value="$PROJECT_DIR$/app/views/todo_lists/new.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/todo_lists/_form.html.erb" />
         <option value="$PROJECT_DIR$/db/migrate/20181021113555_add_active_totodo_lists.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/todo_lists_controller.rb" />
-        <option value="$PROJECT_DIR$/app/models/todo_item.rb" />
         <option value="$PROJECT_DIR$/app/models/user.rb" />
-        <option value="$PROJECT_DIR$/app/models/todo_list.rb" />
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/custom.scss" />
         <option value="$PROJECT_DIR$/db/seeds.rb" />
-        <option value="$PROJECT_DIR$/app/views/layouts/_header.html.erb" />
         <option value="$PROJECT_DIR$/db/migrate/20181023220330_drop_diaries_table.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20181023221132_droptables_todo_lists.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/dashboard_controller.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/meetings_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/meetings/_formedit.html.erb" />
         <option value="$PROJECT_DIR$/app/views/meetings/_form.html.erb" />
+        <option value="$PROJECT_DIR$/db/migrate/20181023232540_remove_todo_item_id_fom_todo_lists.rb" />
+        <option value="$PROJECT_DIR$/app/views/todo_lists/_todo_items_fields.html.erb" />
+        <option value="$PROJECT_DIR$/Gemfile" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
+        <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
+        <option value="$PROJECT_DIR$/config/initializers/assets.rb" />
+        <option value="$PROJECT_DIR$/app/models/todo_list.rb" />
+        <option value="$PROJECT_DIR$/app/models/todo_item.rb" />
+        <option value="$PROJECT_DIR$/app/views/todo_items/_todo_item.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/todo_items/show.html.erb" />
+        <option value="$PROJECT_DIR$/app/controllers/todo_items_controller.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/todo_lists_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/todo_lists/edit.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/todo_lists/_todo_item_fields.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/todo_lists/index.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/todo_lists/_form.html.erb" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/custom.scss" />
+        <option value="$PROJECT_DIR$/app/views/todo_lists/show.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/service_providers/index.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/resources/index.html.erb" />
+        <option value="$PROJECT_DIR$/config/routes.rb" />
+        <option value="$PROJECT_DIR$/app/views/layouts/_header.html.erb" />
+        <option value="$PROJECT_DIR$/app/controllers/dashboard_controller.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/meetings_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/meetings/index.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/dashboard/personal.html.erb" />
         <option value="$PROJECT_DIR$/app/views/dashboard/index.html.erb" />
       </list>
     </option>
@@ -215,7 +383,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="RailsProjectView" />
       <pane id="ProjectPane">
         <subPane>
@@ -240,6 +408,13 @@
               <item name="hergaintranet" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="javascripts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hergaintranet" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hergaintranet" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
               <item name="stylesheets" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -247,6 +422,12 @@
               <item name="hergaintranet" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="controllers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hergaintranet" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hergaintranet" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="hergaintranet" type="b2602c69:ProjectViewProjectNode" />
@@ -274,6 +455,32 @@
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
               <item name="meetings" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hergaintranet" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hergaintranet" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hergaintranet" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hergaintranet" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="service_providers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hergaintranet" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hergaintranet" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="todo_lists" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hergaintranet" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hergaintranet" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="hergaintranet" type="b2602c69:ProjectViewProjectNode" />
@@ -307,7 +514,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -318,6 +525,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/views/todo_items" />
       <recent name="$PROJECT_DIR$/lib/seeds" />
       <recent name="$PROJECT_DIR$/app/views/user" />
     </key>
@@ -468,12 +676,13 @@
       <workItem from="1539816603960" duration="60701000" />
       <workItem from="1540112987119" duration="82000" />
       <workItem from="1540115302546" duration="7544000" />
-      <workItem from="1540329901353" duration="5859000" />
+      <workItem from="1540329901353" duration="30644000" />
+      <workItem from="1540502035499" duration="4921000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="242508000" />
+    <option name="totallyTimeSpent" value="272214000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -488,7 +697,7 @@
     <frame x="65" y="-4" width="1855" height="1204" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33665007" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15644002" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32966024" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41781452" sideWeight="0.15699281" order="7" side_tool="true" content_ui="tabs" />
@@ -516,8 +725,8 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32966024" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22862454" sideWeight="0.8430072" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18463239" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2798913" sideWeight="0.8430072" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15478165" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32946378" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -541,189 +750,7 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/resources/new.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/resources/edit.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="19" lean-forward="false" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/service_providers/edit.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="10" column="6" lean-forward="true" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/helpers/dashboard_helper.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/resources_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="17" lean-forward="false" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/todo_items/_todo_item.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="35" column="19" lean-forward="false" selection-start-line="35" selection-start-column="19" selection-end-line="35" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/resources/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="648">
-          <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/meeting.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/service_providers/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-181">
-          <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="94" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/resources/show.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="75" lean-forward="false" selection-start-line="8" selection-start-column="75" selection-end-line="8" selection-end-column="75" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/service_providers/show.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="10" column="4" lean-forward="false" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/diaries/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="25" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="77" lean-forward="false" selection-start-line="8" selection-start-column="77" selection-end-line="8" selection-end-column="77" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/diaries/show.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="51" column="0" lean-forward="false" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/todo_lists/edit.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/helpers/diaries_helper.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/diaries/_form.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="19" column="29" lean-forward="false" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/todo_lists/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/todo_lists/show.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="20" column="4" lean-forward="false" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/resources/_form.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/devise/sessions/new.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20181021112216_add_user_id_to_todo_lists.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20181021113555_add_active_totodo_lists.rb" />
-    <entry file="file://$PROJECT_DIR$/db/migrate/20181021115829_add_active_to_todo_list.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/todo_lists/new.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/todo_lists/_form.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="648">
-          <caret line="36" column="6" lean-forward="false" selection-start-line="36" selection-start-column="6" selection-end-line="36" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/diaries_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="2" lean-forward="false" selection-start-line="7" selection-start-column="2" selection-end-line="7" selection-end-column="109" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/diaries_controller.rb" />
     <entry file="file://$PROJECT_DIR$/app/controllers/service_providers_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="540">
@@ -745,54 +772,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/todo_lists_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="211">
-          <caret line="13" column="5" lean-forward="false" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/todo_item.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/user.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/todo_list.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/diaries/edit.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="13" column="6" lean-forward="false" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/custom.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="655">
-          <caret line="469" column="0" lean-forward="false" selection-start-line="469" selection-start-column="0" selection-end-line="469" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/diaries/edit.html.erb" />
     <entry file="file://$PROJECT_DIR$/lib/seeds/diaries.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -800,7 +784,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="396">
           <caret line="22" column="3" lean-forward="false" selection-start-line="22" selection-start-column="3" selection-end-line="22" selection-end-column="3" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -820,14 +803,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/_header.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="20" column="50" lean-forward="false" selection-start-line="20" selection-start-column="50" selection-end-line="20" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20181023222841_add_personal_to_meetings.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -840,7 +815,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
           <caret line="13" column="6" lean-forward="false" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -848,31 +822,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
           <caret line="49" column="46" lean-forward="false" selection-start-line="49" selection-start-column="46" selection-end-line="49" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/meetings/show.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="828">
-          <caret line="46" column="0" lean-forward="true" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/meetings/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="13" column="41" lean-forward="false" selection-start-line="13" selection-start-column="41" selection-end-line="13" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/dashboard/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="853">
-          <caret line="88" column="33" lean-forward="false" selection-start-line="88" selection-start-column="33" selection-end-line="88" selection-end-column="33" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -880,30 +829,278 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="367">
           <caret line="49" column="48" lean-forward="true" selection-start-line="49" selection-start-column="48" selection-end-line="49" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20181023232540_remove_todo_item_id_fom_todo_lists.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/meetings_controller.rb">
+    <entry file="file://$PROJECT_DIR$/db/migrate/20181023231822_create_todo_items.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1350">
-          <caret line="75" column="80" lean-forward="false" selection-start-line="75" selection-start-column="80" selection-end-line="75" selection-end-column="80" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/meetings/show.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="828">
+          <caret line="46" column="0" lean-forward="false" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="24" column="11" lean-forward="false" selection-start-line="24" selection-start-column="11" selection-end-line="24" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20181024000215_add_todo_list_id_to_todo_items.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/todo_lists/_todo_items_fields.html.erb" />
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="17" column="18" lean-forward="false" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/initializers/assets.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="14" column="61" lean-forward="false" selection-start-line="14" selection-start-column="61" selection-end-line="14" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="22" column="11" lean-forward="false" selection-start-line="22" selection-start-column="11" selection-end-line="22" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/meeting.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/resource.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/resources/show.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="19" column="27" lean-forward="true" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/user.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="12" column="22" lean-forward="false" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/todo_item.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="5" lean-forward="true" selection-start-line="3" selection-start-column="5" selection-end-line="3" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/todo_items/show.html.erb" />
+    <entry file="file://$PROJECT_DIR$/app/controllers/todo_items_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/todo_list.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1" column="22" lean-forward="false" selection-start-line="1" selection-start-column="22" selection-end-line="1" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/todo_items/_todo_item.html.erb" />
+    <entry file="file://$PROJECT_DIR$/app/views/todo_lists/new.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/todo_lists_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/custom.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5454">
+          <caret line="303" column="1" lean-forward="false" selection-start-line="303" selection-start-column="1" selection-end-line="303" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/service_providers/_form.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="3" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/todo_lists/_form.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="439">
+          <caret line="43" column="21" lean-forward="false" selection-start-line="43" selection-start-column="21" selection-end-line="43" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/service_providers/show.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/resources/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="109">
+          <caret line="21" column="69" lean-forward="false" selection-start-line="21" selection-start-column="69" selection-end-line="21" selection-end-column="69" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/todo_lists/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="31" lean-forward="false" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/db/schema.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
+        <state relative-caret-position="372">
           <caret line="34" column="23" lean-forward="false" selection-start-line="34" selection-start-column="23" selection-end-line="34" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/routes.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="14" column="25" lean-forward="false" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/todo_lists/_todo_item_fields.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="293">
+          <caret line="20" column="75" lean-forward="false" selection-start-line="20" selection-start-column="75" selection-end-line="20" selection-end-column="75" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/todo_lists/show.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="34" column="33" lean-forward="false" selection-start-line="34" selection-start-column="33" selection-end-line="34" selection-end-column="33" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/dashboard_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+        <state relative-caret-position="252">
+          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/todo_lists/edit.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="36" lean-forward="false" selection-start-line="5" selection-start-column="36" selection-end-line="5" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/meetings_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-684">
+          <caret line="7" column="65" lean-forward="false" selection-start-line="7" selection-start-column="65" selection-end-line="7" selection-end-column="65" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/_header.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="42" column="0" lean-forward="true" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/meetings/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/service_providers/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="149">
+          <caret line="52" column="0" lean-forward="false" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="95" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/dashboard/personal.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="20" column="17" lean-forward="false" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/dashboard/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="131">
+          <caret line="85" column="23" lean-forward="false" selection-start-line="85" selection-start-column="23" selection-end-line="85" selection-end-column="23" />
           <folding />
         </state>
       </provider>

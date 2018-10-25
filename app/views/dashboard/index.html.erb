@@ -1,11 +1,11 @@
-<% provide(:title, "Service Providers") %>
+<% provide(:title, "Dashboard") %>
 <h1><%= link_to "My Dashboard", dashboard_index_path, class: "fa fa-dashboard" %></h1>
 <hr>
 
 
 <h2><%= link_to "View Resources",resources_path, class: "fa fa-database" %></h2>
 <hr>
-<table class="table table-fixed">
+<table class="table table-hover">
   <thead>
   <tr>
     <th class="col-xs-1">Name</th>
@@ -20,7 +20,7 @@
   <tbody>
   <% @resources.each do |resource| %>
     <tr>
-      <td class="col-xs-1"><%= resource.name %></td>
+      <td class="col-xs-1"><%=  link_to resource.name,resource.link %></td>
       <td class="col-xs-10"><%= resource.description %></td>
       <td class="col-xs-1"><%= resource.user.email %></td>
       <td class="col-xs-1"><%= link_to 'View', resource,class: "fa fa-eye"  %></td>
@@ -40,7 +40,7 @@
 <hr>
 <h2><%= link_to "View Service Providers",service_providers_path, class: "fa fa-database" %></h2>
 <hr>
-<table class="table table-fixed">
+<table class="table table-hover">
   <thead>
   <tr>
     <th class="col-xs-1">Name</th>
@@ -58,7 +58,7 @@
   <tbody>
   <% @service_providers.each do |service_provider| %>
     <tr>
-      <td class="col-xs-1"><%= service_provider.name %></td>
+      <td class="col-xs-1"><%= link_to service_provider.name, service_provider.link %></td>
       <td class="col-xs-5"><%= service_provider.address %></td>
       <td class="col-xs-1"><%= service_provider.telephone %></td>
       <td class="col-xs-1"><%= service_provider.email %></td>
@@ -77,52 +77,50 @@
   </tbody>
 </table>
 
+
+
+
+<hr>
+<hr>
+
+<h2><%= link_to "House Calendar",meetings_path, class: "fa fa-database" %></h2>
+<hr>
+
+<hr>
+
+<table class=" table table-hover">
+  <thead>
+  <tr>
+    <th>Name</th>
+    <th>Start time</th>
+    <th>End time</th>
+    <th>Logged by</th>
+    <th colspan="3"></th>
+  </tr>
+  </thead>
+
+  <tbody>
+  <% @activemeetings.each do |meeting| %>
+    <tr>
+      <td class = "text"><%= link_to meeting.name, meeting %></td>
+      <td class = "text"><%= meeting.start_time %></td>
+      <td class = "text"><%= meeting.end_time %></td>
+      <td><%= meeting.user.email %></td>
+      <td><%= link_to 'View', meeting ,class: "fa fa-eye" %></td>
+
+      <td><%= link_to 'Edit', edit_meeting_path(meeting),class: "fa fa-pencil" %></td>
+
+      <% if current_user.admin == true %>
+        <td><%= link_to 'Delete', meeting, method: :delete, data: { confirm: 'Are you sure?' },class: "fa fa-close" %></td>
+      <% end %>
+    </tr>
+  <% end %>
+  </tbody>
+</table>
+
+<hr>
+
 <%= will_paginate @service_providers %>
-
-
-<hr>
-<hr>
-
-<h2><%= link_to "House Planner / Calendar",meetings_path, class: "fa fa-database" %></h2>
-<hr>
-
-<%= month_calendar(events:@activemeetings, attribute: :start_time, end_attribute: :end_time) do |day, meetings| %>
-
-  <div> <%= day %></div>
-
-
-  <% meetings.each do |meeting| %>
-    <div class = "meeting_display">
-      <Strong><%= link_to meeting.name, meeting %></Strong>
-      <hr>
-    </div>
-
-  <% end %>
-
-<% end %>
-
-<hr>
-<h2><%= link_to "Personal Planner / Calendar",meetings_path, class: "fa fa-database" %></h2>
-<hr>
-<%= month_calendar(events:@usermeetings, attribute: :start_time, end_attribute: :end_time) do |day, meetings| %>
-
-  <div> <%= day %></div>
-
-
-  <% meetings.each do |meeting| %>
-    <div class = "meeting_display">
-      <Strong><%= link_to meeting.name, meeting %></Strong>
-      <hr>
-    </div>
-
-  <% end %>
-
-<% end %>
-
-
-<hr>
-
-
 
 
 

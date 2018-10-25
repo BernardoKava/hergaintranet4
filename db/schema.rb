@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_10_23_222841) do
+ActiveRecord::Schema.define(version: 2018_10_24_000215) do
 
   create_table "meetings", force: :cascade do |t|
     t.string "name"
@@ -54,6 +54,24 @@ ActiveRecord::Schema.define(version: 2018_10_23_222841) do
     t.string "link"
     t.float "longitude"
     t.float "latitude"
+  end
+
+  create_table "todo_items", force: :cascade do |t|
+    t.string "name"
+    t.boolean "complete"
+    t.date "completed_at"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.integer "todo_list_id"
+  end
+
+  create_table "todo_lists", force: :cascade do |t|
+    t.string "name"
+    t.text "description"
+    t.boolean "active"
+    t.integer "user_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "users", force: :cascade do |t|

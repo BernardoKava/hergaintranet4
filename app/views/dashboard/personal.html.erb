@@ -1,0 +1,23 @@
+<% provide(:title, "Personal Plannner") %>
+
+<hr>
+<h2><%= link_to "Personal Planner / Calendar",dashboard_personal_path, class: "fa fa-database" %></h2>
+<hr>
+<%= month_calendar(events:@usermeetings, attribute: :start_time, end_attribute: :end_time) do |day, meetings| %>
+
+  <div> <%= day %></div>
+
+
+  <% meetings.each do |meeting| %>
+    <div class = "meeting_display">
+      <Strong><%= link_to meeting.name, meeting %></Strong>
+      <hr>
+    </div>
+
+  <% end %>
+
+<% end %>
+
+<div class="links">
+  <%= link_to 'Add Activity', new_meeting_path, class:'fa fa-plus-circle' %>
+</div>

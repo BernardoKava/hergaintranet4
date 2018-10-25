@@ -19,7 +19,7 @@
   <tbody>
     <% @resources.each do |resource| %>
       <tr>
-        <td class="col-xs-1"><%= resource.name %></td>
+        <td class="col-xs-1"><%= link_to resource.name, resource.link %></td>
         <td class="col-xs-10"><%= resource.description %></td>
         <td class="col-xs-1"><%= resource.user.email %></td>
         <td class="col-xs-1"><%= link_to 'View', resource,class: "fa fa-eye"  %></td>

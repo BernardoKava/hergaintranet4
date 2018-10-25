@@ -6,9 +6,8 @@
 <h1>Activity Planner</h1>
 
 <hr>
-<%= link_to 'New Activity', new_meeting_path, class: "btn btn-primary" %>
 
-<hr>
+
 <strong><h2>House Planner</h2></strong>
 
 <%= month_calendar(events:@activemeetings, attribute: :start_time, end_attribute: :end_time) do |day, meetings| %>
@@ -25,57 +24,7 @@
   <% end %>
 
 <% end %>
-
-
-
-<hr>
-
-<strong><h2>Personal Planner</h2></strong>
-
-<%= month_calendar(events:@usermeetings, attribute: :start_time, end_attribute: :end_time) do |day, meetings| %>
-
-  <div> <%= day %></div>
-
-
-  <% meetings.each do |meeting| %>
-    <div class = "meeting_display">
-      <Strong><%= link_to meeting.name, meeting %></Strong>
-      <hr>
-    </div>
-
-  <% end %>
-
-<% end %>
-<hr>
-
-<table class=" table table-striped">
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Start time</th>
-      <th>End time</th>
-      <th>Logged by</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @activemeetings.each do |meeting| %>
-      <tr>
-        <td class = "text"><%= meeting.name %></td>
-        <td class = "text"><%= meeting.start_time %></td>
-        <td class = "text"><%= meeting.end_time %></td>
-        <td><%= meeting.user.email %></td>
-        <td><%= link_to 'View', meeting ,class: "fa fa-eye" %></td>
-
-        <td><%= link_to 'Edit', edit_meeting_path(meeting),class: "fa fa-pencil" %></td>
-
-        <% if current_user.admin == true %>
-        <td><%= link_to 'Delete', meeting, method: :delete, data: { confirm: 'Are you sure?' },class: "fa fa-close" %></td>
-        <% end %>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-<%= will_paginate @activemeetings%>
+<div class="links">
+  <%= link_to 'New Activity', new_meeting_path, class: "fa fa-plus" %>
+</div>
 

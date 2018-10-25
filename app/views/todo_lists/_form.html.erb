@@ -1,0 +1,58 @@
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
+
+<%= form_for @todo_list do |f| %>
+  <% if todo_list.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(todo_list.errors.count, "error") %> prohibited this todo_list from being saved:</h2>
+
+      <ul>
+      <% todo_list.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %>
+    <%= f.text_field :name , class: 'form-control'%>
+  </div>
+
+  <div class="field">
+    <%= f.label :description %>
+    <%= f.text_area :description, class: 'form-control' %>
+  </div>
+
+  <div class="field">
+    <%= f.label :active %>
+    <%= f.check_box :active %>
+  </div>
+
+  <div class="field">
+
+    <%= f.hidden_field :user_id, value: current_user.id %>
+  </div>
+
+  <div class="todo_item_details ">
+    <%= f.fields_for :todo_items  do |item| %>
+
+      <%= render 'todo_item_fields', :f => item %>
+
+    <% end %>
+
+    <div class="links">
+      <%= link_to_add_association 'Add ToDo Item', f, :todo_items , class:'fa fa-plus'%>
+
+    </div>
+
+
+  </div>
+  <br>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
+  </div>
+</div>

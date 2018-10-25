@@ -1,0 +1,34 @@
+<hr>
+<div class="nested-fields">
+
+<div class="jumbotron">
+
+
+  <div class="row">
+    <div class="col-md-6 col-md-offset-3">
+
+
+      <%= f.label  "Content:"  %>
+      <%= f.text_area :name, class: 'form-control'  %>
+
+      <br>
+
+      <%= f.label "Completed:" %>
+      <%= f.check_box :complete %>
+
+<div>
+
+  <%= link_to_remove_association 'Remove ToDo Item', f, class:'fa fa-remove' %>
+</div>
+
+    </div>
+  </div>
+
+</div>
+
+
+
+</div>
+
+
+<hr>

@@ -22,6 +22,7 @@ gem 'simple_calendar'
 gem 'recurring_select', github: "RundownApp/recurring_select"
 gem 'rails_admin'
 gem 'geocoder'
+gem 'cocoon'
 
 
 
