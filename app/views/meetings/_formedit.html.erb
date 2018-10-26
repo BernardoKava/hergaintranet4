@@ -15,7 +15,7 @@
         </div>
       <% end %>
 
-      <% if meeting.user.email == current_user.email %>
+
       <%= form.label :name %>
       <%= form.text_field :name, class: 'form-control' %>
       <br>
@@ -51,9 +51,11 @@
         <br>
         <%= form.label :personal %>
         <%= form.check_box :personal, default: true %>
-
+<br>
+        <%= form.label :completed %>
+        <%= form.check_box :completed, default: false %>
       <br><br>
-      <% end %>
+
 
 
 

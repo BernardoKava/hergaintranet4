@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_10_25_225143) do
+ActiveRecord::Schema.define(version: 2018_10_26_210246) do
 
   create_table "meetings", force: :cascade do |t|
     t.string "name"
@@ -27,6 +27,7 @@ ActiveRecord::Schema.define(version: 2018_10_25_225143) do
     t.float "longitude"
     t.float "latitude"
     t.boolean "personal"
+    t.boolean "completed"
   end
 
   create_table "resources", force: :cascade do |t|

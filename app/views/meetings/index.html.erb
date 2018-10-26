@@ -17,8 +17,18 @@
 
   <% meetings.each do |meeting| %>
     <div class = "meeting_display">
-      <Strong><%= link_to meeting.name, meeting %></Strong>
-      <hr>
+
+      <% if meeting.completed == true %>
+
+        <p style="opacity: 0.4" >
+          <Strong><strike><%= link_to meeting.name, meeting %></strike></Strong>
+        </p>
+        <hr>
+      <% else %>
+
+        <Strong><%= link_to meeting.name, meeting %></Strong>
+        <hr>
+      <% end %>
     </div>
 
   <% end %>
