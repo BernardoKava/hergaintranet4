@@ -5,56 +5,88 @@
 <h1>Service Provider:</h1>
 <h2>Click on the name of the service provider to access it.</h2>
 <hr/>
-<p>
-  <strong>Name:</strong>
-  <%= link_to @service_provider.name , @service_provider.link, class: 'fa fa-external-link'%>
-</p>
-<hr/>
-<p>
-  <strong>Address:</strong>
-  <textarea class="input_text_area"   rows="4" cols="150" readonly>
+
+<div class="jumbotron">
+
+
+  <p>
+    <strong>Name:</strong>
+    <%= link_to @service_provider.name , @service_provider.link, class: 'fa fa-external-link'%>
+  </p>
+
+
+</div>
+
+
+
+<div class="jumbotron">
+
+  <p>
+    <strong>Address:</strong>
+    <textarea class="input_text_area"   rows="4" cols="150" readonly>
   <%= @service_provider.address %>
   </textarea>
-</p>
-<hr/>
-<p>
-  <strong>Longitude:</strong>
-  <textarea class="input_text_area" rows="1" cols="150" readonly>
+  </p>
+
+
+
+</div>
+
+
+<div class="jumbotron">
+
+  <p>
+    <strong>Longitude:</strong>
+    <textarea class="input_text_area" rows="1" cols="150" readonly>
   <%= @service_provider.longitude %>
   </textarea>
-</p>
-<hr/>
-<p>
-  <strong>Latitude:</strong>
-  <textarea class="input_text_area"  rows="1" cols="150" readonly>
+  </p>
+
+
+
+</div>
+
+
+<div class="jumbotron">
+
+  <p>
+    <strong>Latitude:</strong>
+    <textarea class="input_text_area"  rows="1" cols="150" readonly>
   <%= @service_provider.latitude %>
   </textarea>
-</p>
-<hr/>
-<p>
-  <strong>Telephone:</strong>
-  <textarea class="input_text_area"  rows="1" cols="150" readonly>
+  </p>
+
+
+
+</div>
+
+
+<div class="jumbotron">
+
+  <p>
+    <strong>Telephone:</strong>
+    <textarea class="input_text_area"  rows="1" cols="150" readonly>
   <%= @service_provider.telephone %>
   </textarea>
-</p>
-<hr/>
-<p>
-  <strong>Provider Email:</strong>
-  <textarea class="input_text_area"  rows="1" cols="150" readonly>
-  <%= @service_provider.email %>
-  </textarea>
-</p>
-<hr/>
-<p>
-  <strong>Acc number:</strong>
-  <textarea class="input_text_area"  rows="1" cols="150" readonly>
+  </p>
+
+</div>
+
+
+
+<div class="jumbotron">
+
+  <p>
+    <strong>Acc number:</strong>
+    <textarea class="input_text_area"  rows="1" cols="150" readonly>
   <%= @service_provider.acc_number %>
   </textarea>
-</p>
-<hr/>
+  </p>
+
+</div>
 
 
-<hr/>
+
 <hr/>
 
 

@@ -11,6 +11,7 @@ class User < ApplicationRecord
   has_many :meetings
   has_many :diaries
   has_many :todo_lists
+  has_many :rules
 
 
   def is_admin?

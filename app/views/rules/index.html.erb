@@ -1,0 +1,74 @@
+<p id="notice"><%= notice %></p>
+
+
+<% if user_signed_in? %>
+
+    <h1>Rules</h1>
+
+    <table class="table table-hover">
+      <thead>
+        <tr>
+          <th>Code</th>
+          <th>Category</th>
+          <th>Title</th>
+          <th>Definition</th>
+          <th colspan="2"></th>
+
+
+        </tr>
+      </thead>
+
+      <tbody>
+        <% @rules.each do |rule| %>
+          <tr>
+            <td><%= link_to rule.code, rule %></td>
+            <td><%= rule.category %></td>
+            <td><%= rule.title %></td>
+            <td><%= rule.definition %></td>
+
+
+            <td><%= link_to 'View', rule, class:'fa fa-eye' %></td>
+            <% if current_user.admin == true  %>
+            <td><%= link_to 'Edit', edit_rule_path(rule), class:'fa fa-edit' %></td>
+            <% end %>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+
+    <br>
+    <% if current_user.admin == true %>
+    <%= link_to 'New Rule', new_rule_path, class:'fa fa-plus' %>
+    <% end %>
+
+  <% else %>
+
+  <h1>Rules</h1>
+
+  <table class="table table-hover">
+    <thead>
+    <tr>
+      <th>Code</th>
+      <th>Category</th>
+      <th>Title</th>
+      <th>Definition</th>
+      <th colspan="2"></th>
+
+
+    </tr>
+    </thead>
+
+    <tbody>
+    <% @rules.each do |rule| %>
+      <tr>
+        <td><%= link_to rule.code, rule %></td>
+        <td><%= rule.category %></td>
+        <td><%= rule.title %></td>
+        <td><%= rule.definition %></td>
+      </tr>
+    <% end %>
+    </tbody>
+  </table>
+<hr>
+  <br>
+<% end %>

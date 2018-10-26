@@ -1,0 +1,50 @@
+<p id="notice"><%= notice %></p>
+
+<div class="jumbotron">
+
+  <p>
+    <strong>Code:</strong>
+    <%= @rule.code %>
+  </p>
+
+
+</div>
+
+<div class="jumbotron">
+
+  <p>
+    <strong>Category:</strong>
+    <%= @rule.category %>
+  </p>
+
+
+</div>
+
+
+<div class="jumbotron">
+
+  <p>
+    <strong>Title:</strong>
+    <%= @rule.title %>
+  </p>
+
+</div>
+
+<div class="jumbotron">
+  <p>
+    <strong>Definition:</strong>
+    <textarea class="input_text_area"   rows="4" cols="150" readonly>
+  <%= @rule.definition %>
+  </textarea>
+  </p>
+
+</div>
+
+
+
+
+<% if user_signed_in? %>
+
+<%= link_to 'Edit', edit_rule_path(@rule) %> |
+<% end %>
+<%= link_to 'Back', rules_path %>

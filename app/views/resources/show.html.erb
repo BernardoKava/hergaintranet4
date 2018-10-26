@@ -1,46 +1,67 @@
 <% provide(:title, " Resources") %>
 <p id="notice"><%= notice %></p>
 
+
 <h1>Resource:</h1>
 <h2>Click on the name of the resource to access it.</h2>
 <hr/>
-<p>
-  <strong>Name:</strong>
-  <%= link_to @resource.name, @resource.link , class: 'fa fa-external-link'%>
-</p>
-<hr/>
-<p>
-  <strong>Description:</strong>
-  <textarea class="input_text_area" rows="4" cols="150" readonly>
+
+<div class="jumbotron">
+
+  <p>
+    <strong>Name:</strong>
+    <%= link_to @resource.name, @resource.link , class: 'fa fa-external-link'%>
+  </p>
+
+
+</div>
+
+<div class="jumbotron">
+  <p>
+    <strong>Description:</strong>
+    <textarea class="input_text_area" rows="4" cols="150" readonly>
   <%= @resource.description %>
   </textarea>
-</p>
-<hr/>
-<p>
-  <strong>Address:</strong>
-  <textarea class="input_text_area" rows="1" cols="150" readonly>
+  </p>
+</div>
+
+<div class="jumbotron">
+
+  <p>
+    <strong>Address:</strong>
+    <textarea class="input_text_area" rows="1" cols="150" readonly>
   <%= @resource.address %>
   </textarea>
-</p>
-<hr/>
-<p>
-  <strong>longitude:</strong>
-  <textarea class="input_text_area" rows="1" cols="150" readonly>
+  </p>
+
+
+</div>
+
+
+<div class="jumbotron">
+
+  <p>
+    <strong>longitude:</strong>
+    <textarea class="input_text_area" rows="1" cols="150" readonly>
   <%= @resource.longitude %>
   </textarea>
-</p>
-<hr/>
-<p>
-  <strong>latitude:</strong>
-  <textarea class="input_text_area"  rows="1" cols="150" readonly>
+  </p>
+
+
+</div>
+
+<div class="jumbotron">
+
+  <p>
+    <strong>latitude:</strong>
+    <textarea class="input_text_area"  rows="1" cols="150" readonly>
   <%= @resource.latitude %>
   </textarea>
-</p>
-<hr/>
+  </p>
 
-<hr/>
-<hr/>
+</div>
 
+<hr>
 
 <div class="links">
   <% if current_user.admin == true %>

@@ -1,48 +1,93 @@
 <p id="notice"><%= notice %></p>
 <hr>
-<p>
-  <strong>Name:</strong>
-  <%= @meeting.name %>
-</p>
-<hr>
-<p>
-  <strong>Start time:</strong>
-  <%= @meeting.start_time %>
-</p>
-<hr>
-<p>
-  <strong>End time:</strong>
-  <%= @meeting.end_time %>
-</p>
-<hr>
-<p>
-  <strong>Address:</strong>
-  <%= @meeting.address %>
-</p>
-<hr>
-<p>
-  <strong>Longitude:</strong>
-  <%= @meeting.longitude %>
-</p>
-<hr>
-<p>
-  <strong>Latitude:</strong>
-  <%= @meeting.latitude %>
-</p>
-<hr>
-<p>
-  <strong>Description:</strong>
-  <textarea class="input_text_area" rows="4" cols="150" readonly>
+
+<div class="jumbotron">
+  <p>
+    <strong>Name:</strong>
+    <%= @meeting.name %>
+  </p>
+</div>
+
+<div class="jumbotron">
+  <p>
+    <strong>Start time:</strong>
+    <%= @meeting.start_time %>
+  </p>
+</div>
+
+
+<div class="jumbotron">
+
+  <p>
+    <strong>End time:</strong>
+    <%= @meeting.end_time %>
+  </p>
+
+</div>
+
+
+<div class="jumbotron">
+
+  <p>
+    <strong>Address:</strong>
+    <%= @meeting.address %>
+  </p>
+
+</div>
+
+
+
+<div class="jumbotron">
+  <p>
+    <strong>Longitude:</strong>
+    <%= @meeting.longitude %>
+  </p>
+
+
+</div>
+
+
+<div class="jumbotron">
+  <p>
+    <strong>Latitude:</strong>
+    <%= @meeting.latitude %>
+  </p>
+
+
+</div>
+
+
+
+
+<div class="jumbotron">
+  <p>
+    <strong>Description:</strong>
+    <textarea class="input_text_area" rows="4" cols="150" readonly>
   <%= @meeting.description %>
   </textarea>
-</p>
-<hr>
-<p>
-  <strong>Comments:</strong>
-  <textarea class="input_text_area" rows="4" cols="150" readonly>
+  </p>
+
+
+</div>
+
+
+
+
+
+<div class="jumbotron">
+  <p>
+    <strong>Comments:</strong>
+    <textarea class="input_text_area" rows="4" cols="150" readonly>
   <%= @meeting.comments %>
   </textarea>
-</p>
+  </p>
+
+
+</div>
+
+
+
+
 <hr>
 
 
