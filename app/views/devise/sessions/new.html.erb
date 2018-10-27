@@ -4,7 +4,8 @@
 
 <div class="row">
   <div class="col-md-6 col-md-offset-3">
-
+    <h3 class="notice"><%= notice %></h3>
+    <h3 class="alert"><%= alert %></h3>
 <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
 
     <%= f.label :email %><br />
