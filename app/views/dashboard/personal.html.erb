@@ -5,7 +5,7 @@
 <hr>
 <%= month_calendar(events:@usermeetings, attribute: :start_time, end_attribute: :end_time) do |day, meetings| %>
 
-  <div> <%= day %></div>
+  <div> <%= day.strftime("%d, %b, %y") %></div>
 
 
   <% meetings.each do |meeting| %>
