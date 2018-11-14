@@ -2,23 +2,30 @@
 <% provide(:title, "View Todo List") %>
 <p id="notice"><%= notice %></p>
 
+<div class="jumbotron">
 
-<p>
-  <strong>ToDo List Title:</strong>
-  <textarea class="input_text_area"  rows="1" cols="170" readonly>
+
+  <p>
+    <strong>ToDo List Title:</strong>
+    <textarea class="input_text_area"  rows="2" cols="170" readonly>
   <%= @todo_list.name %>
   </textarea>
-</p>
+  </p>
 
-<p>
-  <strong>Description:</strong>
-  <textarea class="input_text_area"  rows="1" cols="170" readonly>
+  <p>
+    <strong>Description:</strong>
+    <textarea class="input_text_area"  rows="2" cols="170" readonly>
   <%= @todo_list.description %>
   </textarea>
-</p>
+  </p>
 
-<br/>
-<hr>
+  <br/>
+
+
+
+</div>
+
+<div><h2 style="background-color: rgba(95,158,160,0.35);color: white">My Tasks</h2></div>
 
 <div class="jumbotron">
 
@@ -30,13 +37,13 @@
     </thead>
 
     <tbody>
-    <% for todo_item in @todo_list.todo_items %>
+    <% for todo_task in @todo_list.todo_tasks %>
       <tr>
-        <% if  todo_item.complete == true %>
+        <% if  todo_task.complete == true %>
 
-          <td style="opacity: 0.4" ><strike><%=h todo_item.name %></strike></td>
+          <td style="opacity: 0.4; color:red;" ><strike><%=h link_to todo_task.name, todo_task %></strike></td>
         <% else %>
-          <td><%=h todo_item.name %></td>
+          <td><%=h link_to todo_task.name, todo_task %></td>
         <% end %>
       </tr>
     <% end %>
@@ -47,8 +54,9 @@
 
 </div>
 
+<div class="breadcrumb">
+  <%= link_to 'Edit', edit_todo_list_path(@todo_list), class: 'fa fa-edit' %> |
+  <%= link_to 'Back', todo_lists_path, class: 'fa fa-back' %>
+</div>
 
 
-
-<%= link_to 'Edit', edit_todo_list_path(@todo_list), class: 'fa fa-edit' %> |
-<%= link_to 'Back', todo_lists_path, class: 'fa fa-back' %>

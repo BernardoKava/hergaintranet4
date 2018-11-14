@@ -1,0 +1,14 @@
+<h1>Editing Todo Task</h1>
+
+<%= render 'form', todo_task: @todo_task %>
+
+
+
+<div class="breadcrumb">
+  <%= link_to 'Show', @todo_task, class:'fa fa-eye' %> |
+  <%= link_to 'Back', todo_lists_path, class:'fa fa-arrow-left' %>
+
+</div>
+
+<br>
+<br>

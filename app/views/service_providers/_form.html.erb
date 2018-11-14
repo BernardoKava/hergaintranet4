@@ -16,50 +16,54 @@
     </div>
   <% end %>
 
-
-    <%= form.label :name %>
-    <%= form.text_field :name, class: 'form-control' %>
-
-
-    <%= form.label :address %>
-    <%= form.text_area :address, class: 'form-control' %>
-
-      <%= form.hidden_field :longitude, class: 'form-control'%>
+<div class="jumbotron">
+  <%= form.label :name %>
+  <%= form.text_field :name, class: 'form-control' %>
 
 
-      <%= form.hidden_field  :latitude, class: 'form-control'%>
+  <%= form.label :address %>
+  <%= form.text_area :address, class: 'form-control' %>
 
-    <%= form.label :telephone %>
-    <%= form.text_field :telephone, class: 'form-control' %>
-
-
-
-    <%= form.label :email %>
-    <%= form.text_field :email, class: 'form-control' %>
+  <%= form.hidden_field :longitude, class: 'form-control'%>
 
 
-    <%= form.label :acc_number %>
-    <%= form.text_field :acc_number , class: 'form-control'%>
+  <%= form.hidden_field  :latitude, class: 'form-control'%>
 
-
-    <%= form.label :active %>
-    <%= form.check_box :active %>
+  <%= form.label :telephone %>
+  <%= form.text_field :telephone, class: 'form-control' %>
 
 
 
-    <%= form.label :link %>
-    <%= form.text_area :link, class: 'form-control'%>
+  <%= form.label :email %>
+  <%= form.text_field :email, class: 'form-control' %>
+
+
+  <%= form.label :acc_number %>
+  <%= form.text_field :acc_number , class: 'form-control'%>
+
+
+  <%= form.label :active %>
+  <%= form.check_box :active %>
+
+
+
+  <%= form.label :link %>
+  <%= form.text_area :link, class: 'form-control'%>
 
 
 
 
-    <%= form.hidden_field :user_id ,value: current_user.id, :disabled => false, class: 'form-control'%>
+  <%= form.hidden_field :user_id ,value: current_user.id, :disabled => false, class: 'form-control'%>
 
-<br>
+  <br>
 
   <div class="actions">
     <%= form.submit %>
   </div>
-<% end %>
+    <% end %>
+
+
+</div>
+
   </div>
 </div>

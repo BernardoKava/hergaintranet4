@@ -326,3 +326,20 @@ th {
 .mySlides {
   display:none;
 }
+
+
+.table table-hover.text {
+  position: relative;
+}
+.table table-hover.text span {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+.text:before {
+  content: '';
+  display: inline-block;
+}

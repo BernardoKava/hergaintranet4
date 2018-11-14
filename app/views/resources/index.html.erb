@@ -3,9 +3,9 @@
 
 <h1>Resources</h1>
 
-
-<table class="table table-hover">
-  <thead>
+<div class="jumbotron">
+  <table class="table table-hover">
+    <thead>
     <tr>
       <th class="col-xs-1">Name</th>
       <th class="col-xs-10">Description</th>
@@ -14,9 +14,9 @@
       <th class="col-xs-1"></th>
       <th class="col-xs-1"></th>
     </tr>
-  </thead>
+    </thead>
 
-  <tbody>
+    <tbody>
     <% @resources.each do |resource| %>
       <tr>
         <td class="col-xs-1"><%= link_to resource.name, resource.link %></td>
@@ -25,20 +25,24 @@
         <td class="col-xs-1"><%= link_to 'View', resource,class: "fa fa-eye"  %></td>
 
         <% if current_user.admin == true %>
-        <td><%= link_to 'Edit', edit_resource_path(resource),class: "fa fa-pencil" %></td>
-        <td><%= link_to 'Destroy', resource, method: :delete, data: { confirm: 'Are you sure?' },class: "fa fa-close" %></td>
+          <td><%= link_to 'Edit', edit_resource_path(resource),class: "fa fa-pencil" %></td>
+          <td><%= link_to 'Destroy', resource, method: :delete, data: { confirm: 'Are you sure?' },class: "fa fa-close" %></td>
         <% end %>
       </tr>
     <% end %>
-  </tbody>
-</table>
+    </tbody>
+  </table>
 
-<hr>
-<%= will_paginate @resources %>
-<hr>
-<% if current_user.admin == true %>
-  <div class="links">
-    <%= link_to 'New Resource', new_resource_path ,class:'fa fa-plus-circle' %>
-  </div>
+  <hr>
+  <%= will_paginate @resources %>
+  <hr>
+  <% if current_user.admin == true %>
+    <div class="links">
+      <%= link_to 'New Resource', new_resource_path ,class:'fa fa-plus-circle' %>
+    </div>
 
-<% end %>
+  <% end %>
+
+
+</div>
+

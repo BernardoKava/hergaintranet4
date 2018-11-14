@@ -1,0 +1,50 @@
+<p id="notice"><%= notice %></p>
+
+<div class="jumbotron">
+
+  <p>
+    <strong>Name:</strong>
+
+      <% if  @todo_task.complete == true %>
+       <div style="opacity: 0.4; color: red;">
+         <strike>
+           <%= @todo_task.name %>
+         </strike>
+       </div>
+      <% else %>
+    <p>
+      <textarea class="input_text_area"  rows="2" cols="170" readonly>
+        <%= @todo_task.name %>
+      </textarea>
+    </p>
+
+      <% end  %>
+
+  </p>
+
+  <p>
+    <strong>Complete:</strong>
+    <textarea class="input_text_area"  rows="2" cols="170" readonly>
+  <%= @todo_task.complete.humanize %>
+  </textarea>
+  </p>
+
+  <p>
+    <strong> Updated:</strong>
+    <textarea class="input_text_area"  rows="2" cols="170" readonly>
+  <%= @todo_task.updated_at.strftime("%d, %b, %y") %>
+  </textarea>
+  </p>
+
+
+
+</div>
+
+
+
+<div class="breadcrumb">
+
+  <%= link_to 'Edit', edit_todo_task_path(@todo_task), class:'fa fa-edit' %> |
+  <%= link_to 'Back', todo_lists_path, class:'fa fa-arrow-left'%>
+
+</div>

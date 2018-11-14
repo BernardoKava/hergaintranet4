@@ -14,37 +14,40 @@
       </ul>
     </div>
   <% end %>
-
-    <%= form.label :code %>
-    <%= form.text_field :code, class: 'form-control', value: @code %>
-
-<br>
-
-    <%= form.label :category %>
-    <%= form.text_field :category, class: 'form-control' %>
+<div class="jumbotron">
+  <%= form.label :code %>
+  <%= form.text_field :code, class: 'form-control', value: @code %>
 
   <br>
 
-    <%= form.label :title %>
-    <%= form.text_field :title , class: 'form-control'%>
-
-
-  <br>
-    <%= form.label :definition %>
-    <%= form.text_area :definition , class: 'form-control'%>
-
-  <br>
-    <%= form.label :active %>
-    <%= form.check_box :active %>
+  <%= form.label :category %>
+  <%= form.text_field :category, class: 'form-control' %>
 
   <br>
 
-    <%= form.hidden_field :user_id, value: current_user.id %>
+  <%= form.label :title %>
+  <%= form.text_field :title , class: 'form-control'%>
+
+
+  <br>
+  <%= form.label :definition %>
+  <%= form.text_area :definition , class: 'form-control'%>
+
+  <br>
+  <%= form.label :active %>
+  <%= form.check_box :active %>
+
+  <br>
+
+  <%= form.hidden_field :user_id, value: current_user.id %>
   <br>
 
   <div class="actions">
     <%= form.submit %>
   </div>
-<% end %>
+    <% end %>
+
+</div>
+
   </div>
 </div>

@@ -280,6 +280,9 @@ GEM
       tilt
     http-cookie (1.0.3)
       domain_name (~> 0.5)
+    humanize (1.8.1)
+    humanize_boolean (0.0.2)
+      i18n
     i18n (0.9.5)
       concurrent-ruby (~> 1.0)
     ice_cube (0.16.3)
@@ -495,6 +498,8 @@ DEPENDENCIES
   gravtastic
   guard (= 2.14.1)
   guard-minitest (= 2.4.6)
+  humanize
+  humanize_boolean
   jbuilder (= 2.7.0)
   jquery-rails (= 4.3.1)
   listen (= 3.1.5)

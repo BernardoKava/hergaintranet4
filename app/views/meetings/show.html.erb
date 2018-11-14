@@ -1,65 +1,67 @@
+<% provide(:title, "View Activity") %>
 <p id="notice"><%= notice %></p>
 <hr>
 
 <div class="jumbotron">
   <p>
-    <strong>Name:</strong>
+    <strong>Name:</strong><br>
+    <textarea class="input_text_area" rows="2" cols="150" readonly>
     <%= @meeting.name %>
+    </textarea>
   </p>
-</div>
 
-<div class="jumbotron">
+
   <p>
     <strong>Start time:</strong>
-    <%= @meeting.start_time %>
+    <textarea class="input_text_area" rows="2" cols="150" readonly>
+    <%= @meeting.start_time.strftime("%d, %b, %y") %>
+    </textarea>
   </p>
-</div>
 
 
-<div class="jumbotron">
+
+
 
   <p>
     <strong>End time:</strong>
-    <%= @meeting.end_time %>
+    <textarea class="input_text_area" rows="2" cols="150" readonly>
+    <%= @meeting.end_time.strftime("%d, %b, %y") %>
+    </textarea>
   </p>
 
-</div>
-
-
-<div class="jumbotron">
 
   <p>
     <strong>Address:</strong>
+    <textarea class="input_text_area" rows="2" cols="150" readonly>
     <%= @meeting.address %>
+    </textarea>
   </p>
 
-</div>
 
 
-
-<div class="jumbotron">
   <p>
     <strong>Longitude:</strong>
+    <textarea class="input_text_area" rows="2" cols="150" readonly>
     <%= @meeting.longitude %>
+    </textarea>
   </p>
 
 
-</div>
 
-
-<div class="jumbotron">
   <p>
     <strong>Latitude:</strong>
+    <textarea class="input_text_area" rows="2" cols="150" readonly>
     <%= @meeting.latitude %>
+    </textarea>
   </p>
 
 
-</div>
 
 
 
 
-<div class="jumbotron">
+
+
   <p>
     <strong>Description:</strong>
     <textarea class="input_text_area" rows="4" cols="150" readonly>
@@ -68,13 +70,6 @@
   </p>
 
 
-</div>
-
-
-
-
-
-<div class="jumbotron">
   <p>
     <strong>Comments:</strong>
     <textarea class="input_text_area" rows="4" cols="150" readonly>
@@ -92,7 +87,7 @@
 
 
 
-<div class="links">
+<div class="breadcrumb">
 
     <%= link_to 'Edit', edit_meeting_path(@meeting), class: "fa fa-pencil"  %> |
 

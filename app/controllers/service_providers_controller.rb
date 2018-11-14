@@ -4,7 +4,7 @@ class ServiceProvidersController < ApplicationController
   # GET /service_providers
   # GET /service_providers.json
   def index
-    @service_providers = ServiceProvider.paginate(page: params[:page], :per_page => 5)
+    @service_providers = ServiceProvider.where(active: true).paginate(page: params[:page], :per_page => 5)
   end
 
   # GET /service_providers/1

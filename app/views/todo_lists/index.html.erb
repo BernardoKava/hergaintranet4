@@ -3,16 +3,18 @@
 
 <h1>Todo Lists</h1>
 
-<table class="table table-hover">
-  <thead>
+<div class="jumbotron">
+
+  <table class="table table-hover">
+    <thead>
     <tr>
       <th>Name</th>
       <th>Description</th>
       <th colspan="3"></th>
     </tr>
-  </thead>
+    </thead>
 
-  <tbody>
+    <tbody>
     <% @todo_lists.each do |todo_list| %>
       <tr>
         <td class = "text"><%= link_to todo_list.name, todo_list %></td>
@@ -20,13 +22,20 @@
         <td><%= link_to 'View', todo_list, class:'fa fa-eye' %></td>
         <td><%= link_to 'Edit', edit_todo_list_path(todo_list), class:'fa fa-edit' %></td>
         <% if current_user.admin == true %>
-        <td><%= link_to 'Delete', todo_list, method: :delete, data: { confirm: 'Are you sure?' }, class:'fa fa-close' %></td>
+          <td><%= link_to 'Delete', todo_list, method: :delete, data: { confirm: 'Are you sure?' }, class:'fa fa-close' %></td>
         <% end %>
       </tr>
     <% end %>
-  </tbody>
-</table>
+    </tbody>
+  </table>
 
-<br>
+  <br>
 
-<%= link_to 'New Todo List', new_todo_list_path, class:'fa fa-pencil'%>
+  <%= link_to 'New Todo List', new_todo_list_path, class:'fa fa-pencil'%>
+
+
+</div>
+
+
+
+

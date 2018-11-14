@@ -15,36 +15,40 @@
       </ul>
     </div>
   <% end %>
+<div class="jumbotron">
 
-
-    <%= form.label :name %>
-    <%= form.text_field :name , class: 'form-control'%>
-
-
-
-    <%= form.label :description %>
-    <%= form.text_area :description , class: 'form-control'%>
-
-      <%= form.label :address %>
-      <%= form.text_area :address, class: 'form-control' %>
-
-      <%= form.hidden_field :longitude, class: 'form-control'%>
-
-
-      <%= form.hidden_field  :latitude, class: 'form-control'%>
-
-    <%= form.hidden_field :user_id ,value: current_user.id %>
+  <%= form.label :name %>
+  <%= form.text_field :name , class: 'form-control'%>
 
 
 
-    <%= form.label :link %>
-    <%= form.text_area :link, class: 'form-control' %>
+  <%= form.label :description %>
+  <%= form.text_area :description , class: 'form-control'%>
+
+  <%= form.label :address %>
+  <%= form.text_area :address, class: 'form-control' %>
+
+  <%= form.hidden_field :longitude, class: 'form-control'%>
 
 
-      <br/>
+  <%= form.hidden_field  :latitude, class: 'form-control'%>
 
-    <p><%= form.submit %></p>
+  <%= form.hidden_field :user_id ,value: current_user.id %>
 
-<% end %>
+
+
+  <%= form.label :link %>
+  <%= form.text_area :link, class: 'form-control' %>
+
+
+  <br/>
+
+  <p><%= form.submit %></p>
+
+    <% end %>
+
+</div>
+
+
   </div>
 </div>

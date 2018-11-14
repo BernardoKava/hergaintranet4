@@ -3,31 +3,37 @@
 <hr>
 <h2><%= link_to "Personal Planner / Calendar",dashboard_personal_path, class: "fa fa-database" %></h2>
 <hr>
-<%= month_calendar(events:@usermeetings, attribute: :start_time, end_attribute: :end_time) do |day, meetings| %>
 
-  <div> <%= day.strftime("%d, %b, %y") %></div>
+<div class="jumbotron">
+
+  <%= month_calendar(events:@usermeetings, attribute: :start_time, end_attribute: :end_time) do |day, meetings| %>
+
+    <div> <%= day.strftime("%d, %b, %y") %></div>
 
 
-  <% meetings.each do |meeting| %>
-    <div class = "meeting_display">
+    <% meetings.each do |meeting| %>
+      <div class = "meeting_display">
 
-      <% if meeting.completed == true %>
+        <% if meeting.completed == true %>
 
-        <p style="opacity: 0.4" >
-          <Strong><strike><%= link_to meeting.name, meeting %></strike></Strong>
-        </p>
-        <hr>
-      <% else %>
+          <p style="opacity: 0.4" >
+            <Strong><strike><%= link_to meeting.name, meeting %></strike></Strong>
+          </p>
+          <hr>
+        <% else %>
 
-        <Strong><%= link_to meeting.name, meeting %></Strong>
-        <hr>
-      <% end %>
-    </div>
+          <Strong><%= link_to meeting.name, meeting %></Strong>
+          <hr>
+        <% end %>
+      </div>
+
+    <% end %>
 
   <% end %>
 
-<% end %>
+  <div class="links">
+    <%= link_to 'Add Activity', new_meeting_path, class:'fa fa-plus-circle' %>
+  </div>
 
-<div class="links">
-  <%= link_to 'Add Activity', new_meeting_path, class:'fa fa-plus-circle' %>
 </div>
+

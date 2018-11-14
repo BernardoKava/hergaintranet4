@@ -14,60 +14,63 @@
       </ul>
     </div>
   <% end %>
+<div class="jumbotron">
+
+  <%= form.label :name %>
+  <%= form.text_field :name, class: 'form-control' %>
+  <br>
+
+  <%= form.label :start_time %>
+  <%= form.datetime_select :start_time, class: 'form-control'%>
+
+  <br>
+  <%= form.label :end_time %>
+  <%= form.datetime_select :end_time , class: 'form-control'%>
+
+  <br>
+  <br>
+  <%= form.label :description %>
+  <%= form.text_area :description, class: 'form-control'%>
+
+  <br>
+
+  <br>
+  <%= form.label :address %>
+  <%= form.text_area :address, class: 'form-control'%>
 
 
-    <%= form.label :name %>
-    <%= form.text_field :name, class: 'form-control' %>
-<br>
-
-    <%= form.label :start_time %>
-    <%= form.datetime_select :start_time, class: 'form-control'%>
-
-      <br>
-    <%= form.label :end_time %>
-    <%= form.datetime_select :end_time , class: 'form-control'%>
-
-      <br>
-      <br>
-    <%= form.label :description %>
-    <%= form.text_area :description, class: 'form-control'%>
-
-      <br>
-
-      <br>
-      <%= form.label :address %>
-      <%= form.text_area :address, class: 'form-control'%>
+  <%= form.hidden_field :longitude, class: 'form-control'%>
 
 
-      <%= form.hidden_field :longitude, class: 'form-control'%>
+  <%= form.hidden_field  :latitude, class: 'form-control'%>
+
+  <br>
+
+  <%= form.label :active %>
+  <%= form.check_box :active, default: true %>
+
+  <br>
+  <%= form.label :personal %>
+  <%= form.check_box :personal, default: false %>
+  <br>
+  <%= form.label :completed %>
+  <%= form.check_box :completed, default: false %>
+  <br><br>
 
 
-      <%= form.hidden_field  :latitude, class: 'form-control'%>
+  <%= form.label :comments %>
+  <%= form.text_area :comments, class: 'form-control'%>
 
-      <br>
+  <%= form.hidden_field :user_id ,value: current_user.id , class: 'form-control'%>
 
-    <%= form.label :active %>
-    <%= form.check_box :active, default: true %>
+  <br>
 
-      <br>
-      <%= form.label :personal %>
-      <%= form.check_box :personal, default: false %>
-      <br>
-      <%= form.label :completed %>
-      <%= form.check_box :completed, default: false %>
-      <br><br>
+  <%= form.submit "Save" %>
 
+    <% end %>
 
-      <%= form.label :comments %>
-      <%= form.text_area :comments, class: 'form-control'%>
+</div>
 
-    <%= form.hidden_field :user_id ,value: current_user.id , class: 'form-control'%>
-
-<br>
-
-    <%= form.submit %>
-
-<% end %>
   </div>
 
 </div>

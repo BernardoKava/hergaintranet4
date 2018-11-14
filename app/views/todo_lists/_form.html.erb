@@ -13,6 +13,7 @@
       </ul>
     </div>
   <% end %>
+<div class="jumbotron">
 
   <div class="field">
     <%= f.label :name %>
@@ -33,26 +34,26 @@
 
     <%= f.hidden_field :user_id, value: current_user.id %>
   </div>
-
+</div>
   <div class="todo_item_details ">
-    <%= f.fields_for :todo_items  do |item| %>
+    <%= f.fields_for :todo_tasks  do |item| %>
 
-      <%= render 'todo_item_fields', :f => item %>
+      <%= render 'todo_task_fields', :f => item %>
 
     <% end %>
+      <div class="breadcrumb">
+        <div class="links">
+          <%= link_to_add_association 'Add Task', f, :todo_tasks , class:'fa fa-plus', style:"color:green"%>
+        </div>
+      </div>
 
-    <div class="links">
-      <%= link_to_add_association 'Add ToDo Item', f, :todo_items , class:'fa fa-plus'%>
-
-    </div>
-
-
+      <div class="breadcrumb">
+        <div class="actions">
+          <%= f.submit %>
+        </div>
+      </div>
   </div>
   <br>
-
-  <div class="actions">
-    <%= f.submit %>
-  </div>
 <% end %>
   </div>
 </div>

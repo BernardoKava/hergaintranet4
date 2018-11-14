@@ -24,10 +24,10 @@
               <li class="divider"></li>
               <li><%= link_to "ToDo List",  todo_lists_path ,class:' 	fa fa-check-square-o' %></li>
               <li class="divider"></li>
-              <li><%= link_to "Home Intel",  '#' ,class:' 	fa fa-database' %></li>
+              <li><%= link_to "Home Intel",  'http://10.1.10.193:3000' ,class:' 	fa fa-database' %></li>
               <% if current_user.officer && current_user.admin == true %>
                 <li class="divider"></li>
-                <li><%= link_to "System Administration",  rails_admin_path ,class:'fa fa-cogs' %></li>
+                <li><%= link_to "Backend System",  rails_admin_path ,class:'fa fa-cogs' %></li>
               <% end %>
             </ul>
         <% end %>

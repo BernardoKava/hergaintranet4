@@ -14,18 +14,15 @@
   </p>
 
 
-</div>
 
-<div class="jumbotron">
+
   <p>
     <strong>Description:</strong>
     <textarea class="input_text_area" rows="4" cols="150" readonly>
   <%= @resource.description %>
   </textarea>
   </p>
-</div>
 
-<div class="jumbotron">
 
   <p>
     <strong>Address:</strong>
@@ -35,11 +32,6 @@
   </p>
 
 
-</div>
-
-
-<div class="jumbotron">
-
   <p>
     <strong>longitude:</strong>
     <textarea class="input_text_area" rows="1" cols="150" readonly>
@@ -47,10 +39,6 @@
   </textarea>
   </p>
 
-
-</div>
-
-<div class="jumbotron">
 
   <p>
     <strong>latitude:</strong>
@@ -63,10 +51,11 @@
 
 <hr>
 
-<div class="links">
+<div class="breadcrumb">
   <% if current_user.admin == true %>
     <%= link_to 'Edit', edit_resource_path(@resource) , class: "fa fa-pencil"%> |
   <% end %>
   <%= link_to 'Back', resources_path, class:"fa fa-arrow-circle-o-left" %>
 
 </div>
+<hr>

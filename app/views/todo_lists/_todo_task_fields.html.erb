@@ -1,0 +1,30 @@
+
+<div class="nested-fields">
+
+  <div class="jumbotron">
+
+
+    <div class="row">
+
+        <%= f.label  "Content:"  %>
+        <%= f.text_area :name, class: 'form-control'  %>
+
+        <br>
+
+        <%= f.label "Completed:" %>
+        <%= f.check_box :complete %>
+
+        <div>
+
+          <%= link_to_remove_association 'Remove Task', f, class:'fa fa-remove', style:"font-size:15px;color:red "%>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+
+
+</div>
+
